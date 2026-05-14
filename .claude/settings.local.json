@@ -1,7 +1,22 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:support.decagames.com)",
+      "WebFetch(domain:embracer.com)",
+      "WebFetch(domain:play.google.com)",
+      "WebFetch(domain:apps.apple.com)",
+      "WebFetch(domain:venturebeat.com)",
+      "WebFetch(domain:kingdoms-of-camelot-battle.soft112.com)",
+      "WebFetch(domain:elves-vs-dwarves.soft112.com)",
+      "WebFetch(domain:www.pocketgamer.biz)",
+      "WebFetch(domain:www.prnewswire.com)",
+      "WebFetch(domain:elves-vs-dwarves-ios.soft112.com)",
+      "WebFetch(domain:apkpure.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:elves-vs-dwarves.apk.gold)",
+      "WebFetch(domain:www.businesswire.com)",
+      "WebFetch(domain:gamesbeat.com)"
     ]
   }
 }
