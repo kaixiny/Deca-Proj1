@@ -1,5 +1,53 @@
 # Deca 中国工作室旗下 EVD & KBN 长青化运营策略演变报告
 
+---
+
+## 修订日志
+
+> **版本**：v3_final（修订版）
+> **基于**：v3_draft.md
+> **审查依据**：v3_audit.md
+> **修订时间**：2026-05-14
+
+本版本基于 Step 4 红队审查，对初稿 v3_draft.md 进行了 4 处修订。
+
+### 修订 #1（对应 audit B8 - 来源归属错误）
+- **位置**：第 3.1 节 KBN 起源：Kingdoms of Camelot（Facebook 版）
+- **修订前**：KBN 2012 年最高收入游戏 [引用：Wikipedia/Kabam + GamesBeat]
+- **修订后**：KBN 2012 年最高收入游戏 [引用：Wikipedia/KoC + GamesBeat]
+- **理由**：Wikipedia/Kabam 实际不包含此声明，正确来源为 Wikipedia/KoC
+- **验证 URL**：https://en.wikipedia.org/wiki/Kingdoms_of_Camelot
+
+### 修订 #2（对应 audit D10 - 版本号来源冲突）
+- **位置**：第 4.2 节 EVD 阶段三 主线三：变现机制创新——付费模式多元化探索
+- **修订前**：v17.0.4（2026-03-17）：Battle Pass [MEDIUM]
+- **修订后**：约 2026 年 3–4 月（App Store 记 v17.0.4，soft112 记 v17.0.5）：Battle Pass [MEDIUM]
+- **理由**：App Store 与 soft112 对 Battle Pass 的版本号归属不一致
+- **验证 URL**：https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435
+
+### 修订 #3（对应 audit D11 - 版本号来源冲突）
+- **位置**：第 4.2 节 EVD 阶段三 主线三：变现机制创新——付费模式多元化探索
+- **修订前**：v17.0.6（2026-04-16）：Campaign Legendary chapter [MEDIUM]
+- **修订后**：约 2026 年 4 月（App Store 记 v17.0.6，soft112 记 v17.0.7）：Campaign Legendary chapter [MEDIUM]
+- **理由**：App Store 与 soft112 对该功能的版本号归属不一致
+- **验证 URL**：https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435
+
+### 修订 #4（对应 audit E4 - 未经确认声明）
+- **位置**：第 4.3 节 KBN 阶段三：系统全面扩展（原 v22.3.0 条目，整段删除）
+- **修订前**：v22.3.0（2024-08-19）：新增城堡皮肤
+- **修订后**：[整段删除]
+- **理由**：App Store v22.3.0 仅显示图形渲染修复，无城堡皮肤；皮肤系统首次确认在 v22.4.0
+- **验证 URL**：https://apps.apple.com/us/app/kingdoms-of-camelot-battle/id476546099
+
+### 修订统计
+- 总声明数：30
+- 通过验证：26 条（HIGH 维持）
+- 已修订错误：3 条
+- 来源归属修正：1 条
+- 删除声明：1 条
+
+---
+
 **版本：** v3_final（遵循 CLAUDE.md 工作流，第三轮研究定稿）
 **日期：** 2026-05-14
 **研究范围：** Elves vs Dwarves（EVD）与 Kingdoms of Camelot: Battle for the North（KBN）
@@ -268,15 +316,3 @@ Deca 接手后保留聚锋团队继续运营 **[HIGH]** [[Embracer 官方公告]
 - [apk.gold：EVD Android 版本日志（v16.8.x 详细英文 changelog）](https://elves-vs-dwarves.apk.gold/android-7.1.2)
 - [GamesBeat：KBN 2012 年 App Store 最高收入（2012-12-21）](https://gamesbeat.com/kabam-scores-big-with-highest-grossing-game-on-app-store-for-2012/)
 
----
-
-## 附：v3_audit 修订日志
-
-本文件相较 v3_draft 应用了以下 4 处修正：
-
-| # | 问题类型 | v3_draft 内容 | v3_final 修正 | 依据 |
-|---|---------|-------------|-------------|------|
-| 1 | 来源归属错误 | "KBN 2012年最高收入游戏"引用 Wikipedia/Kabam + GamesBeat | 改为 **Wikipedia/KoC** + GamesBeat（Wikipedia/Kabam 无此声明） | v3_audit B8 |
-| 2 | 版本号来源冲突 | v17.0.4（Mar 17）：Battle Pass [MEDIUM] | 改为"**约 2026 年 3–4 月**（App Store 记 v17.0.4，soft112 记 v17.0.5）"并注明来源冲突 | v3_audit D10 |
-| 3 | 版本号来源冲突 | v17.0.6（Apr 16）：Campaign Legendary chapter [MEDIUM] | 改为"**约 2026 年 4 月**（App Store 记 v17.0.6，soft112 记 v17.0.7）"并注明来源冲突 | v3_audit D11 |
-| 4 | 未经确认声明 | KBN v22.3.0（Aug 19, 2024）：新增城堡皮肤 | **整段删除**；城堡皮肤首次确认出现在 v22.4.0（Nov 6, 2024） | v3_audit E4 |
