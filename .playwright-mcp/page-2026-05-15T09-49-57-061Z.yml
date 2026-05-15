@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]: 版权流转史
+    - generic [ref=e4]:
+      - text: 两款老游戏
+      - text: 怎么到了 Deca 手里
+  - generic [ref=e6]:
+    - generic [ref=e11]:
+      - generic [ref=e12]: "2009"
+      - generic [ref=e13]: KoC 上线 Facebook
+      - generic [ref=e14]: Kabam 前身打造，Facebook 策略爆款
+    - generic [ref=e19]:
+      - generic [ref=e20]: "2012"
+      - generic [ref=e21]: 霍比特人手游 + KBN iOS 同年上线
+      - generic [ref=e22]: KBN 成 iPhone 全年最高收入游戏
+    - generic [ref=e27]:
+      - generic [ref=e28]: "2016"
+      - generic [ref=e29]: Kabam 出售 → Gaea 接手
+      - generic [ref=e30]:
+        - text: IP 授权到期，《霍比特人》改名 EVD
+        - text: KBN 一并转移给 Gaea
+    - generic [ref=e35]:
+      - generic [ref=e36]: "2020"
+      - generic [ref=e37]: Deca 加入 Embracer
+      - generic [ref=e38]: 瑞典游戏巨头旗下第六运营集团
+    - generic [ref=e42]:
+      - generic [ref=e43]: "2021"
+      - generic [ref=e44]: Deca 收购北京聚锋工作室
+      - generic [ref=e45]:
+        - text: 50 人团队 · EVD + KBN 并入 Deca
+        - text: 正式进入专业 Live Ops 阶段
+  - generic [ref=e46]:
+    - generic [ref=e47]: 数据来源：Wikipedia · Embracer 官方公告
+    - generic [ref=e48]: DECA × 聚锋

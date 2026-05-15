@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #FFFFFF; }
+body { font-family: 'PingFang SC','Microsoft YaHei',sans-serif; display: flex; }
+
+.left {
+  width: 54%; padding: 80px 70px 70px 100px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.tag {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 18px; font-weight: 700; color: #FF6B35;
+  letter-spacing: 3px; margin-bottom: 32px;
+}
+.main-title {
+  font-size: 82px; font-weight: 700; color: #000;
+  line-height: 1.1; margin-bottom: 30px;
+}
+.highlight { color: #FF6B35; }
+.subtitle {
+  font-size: 30px; color: #444; line-height: 1.7; margin-bottom: 56px;
+}
+.stats-bar { display: flex; gap: 52px; padding-top: 36px; border-top: 1px solid #E0E0E0; }
+.stat-num {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 38px; font-weight: 900; color: #FF6B35; line-height: 1;
+}
+.stat-lbl { font-size: 17px; color: #666; margin-top: 6px; }
+
+.right {
+  width: 46%; background: #F7F7F7;
+  padding: 56px 80px 56px 56px;
+  display: flex; flex-direction: column; justify-content: center; gap: 28px;
+}
+.game-card {
+  background: #FFF; border-radius: 20px;
+  border: 1.5px solid #E0E0E0; padding: 40px 44px;
+}
+.game-period {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 16px; font-weight: 700; color: #FF6B35;
+  letter-spacing: 2px; margin-bottom: 10px;
+}
+.game-name { font-size: 32px; font-weight: 700; color: #000; margin-bottom: 6px; }
+.game-en {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 17px; color: #999; margin-bottom: 16px;
+}
+.game-desc { font-size: 21px; color: #555; line-height: 1.55; }
+.game-chip {
+  display: inline-block; margin-top: 16px;
+  padding: 5px 16px; background: #FFF3EE;
+  border-radius: 20px; font-size: 17px; color: #FF6B35; font-weight: 600;
+}
+</style>
+</head>
+<body>
+<div class="left">
+  <div class="tag">DECA GAMES × 聚锋工作室</div>
+  <div class="main-title">
+    专门收购<span class="highlight">「老游戏」</span>的<br>德国公司
+  </div>
+  <div class="subtitle">
+    如何让一款 2012 年的手游<br>在 2026 年还在赚钱
+  </div>
+  <div class="stats-bar">
+    <div><div class="stat-num">2016</div><div class="stat-lbl">柏林创立</div></div>
+    <div><div class="stat-num">20+</div><div class="stat-lbl">款游戏</div></div>
+    <div><div class="stat-num">26</div><div class="stat-lbl">个国家</div></div>
+    <div><div class="stat-num">730+</div><div class="stat-lbl">名员工</div></div>
+  </div>
+</div>
+
+<div class="right">
+  <div class="game-card">
+    <div class="game-period">2016 → 至今</div>
+    <div class="game-name">精灵对抗矮人（EVD）</div>
+    <div class="game-en">Elves vs Dwarves</div>
+    <div class="game-desc">前身为 2012 年《霍比特人》手游<br>IP 到期换壳，玩法完整保留</div>
+    <span class="game-chip">城建策略</span>
+  </div>
+  <div class="game-card">
+    <div class="game-period">2012 → 至今</div>
+    <div class="game-name">卡米洛特王国（KBN）</div>
+    <div class="game-en">Kingdoms of Camelot: Battle for the North</div>
+    <div class="game-desc">2012 年 iPhone 全年最高收入游戏<br>已运营 <strong style="color:#FF6B35">14 年</strong>，仍在每月更新</div>
+    <span class="game-chip">策略 MMO</span>
+  </div>
+</div>
+</body>
+</html>

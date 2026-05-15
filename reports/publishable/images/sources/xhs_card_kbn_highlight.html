@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1242px; height: 1242px; overflow: hidden; background: #FFFFFF; }
+body { font-family: 'PingFang SC','Microsoft YaHei',sans-serif; display: flex; flex-direction: column; padding: 80px 80px 56px 80px; }
+
+.eyebrow { font-family: 'Inter',system-ui,sans-serif; font-size: 18px; font-weight: 700; color: #FF6B35; letter-spacing: 3px; margin-bottom: 0; }
+
+.hero { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+.year-block { margin-bottom: 16px; }
+.year {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 160px; font-weight: 900; color: #FF6B35;
+  line-height: 0.9; letter-spacing: -6px;
+}
+.year-sub { font-size: 28px; color: #999; margin-top: 8px; font-family: 'Inter',system-ui,sans-serif; }
+
+.divider { width: 80px; height: 5px; background: #FF6B35; border-radius: 3px; margin: 28px 0; }
+
+.headline { font-size: 52px; font-weight: 700; color: #000; line-height: 1.2; margin-bottom: 20px; }
+
+.stat-row { display: flex; gap: 0; margin-bottom: 40px; }
+.stat-block { margin-right: 52px; }
+.stat-num {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 60px; font-weight: 900; color: #FF6B35; line-height: 1;
+}
+.stat-lbl { font-size: 22px; color: #666; margin-top: 4px; }
+
+.supporting {
+  border-left: 4px solid #FF6B35;
+  padding-left: 24px;
+  margin-bottom: 36px;
+}
+.sup-text { font-size: 24px; color: #444; line-height: 1.6; }
+.sup-num { color: #FF6B35; font-weight: 700; }
+
+.now-tag {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 14px 24px; background: #F7F7F7; border-radius: 12px;
+}
+.now-dot { width: 10px; height: 10px; border-radius: 50%; background: #FF6B35; }
+.now-text { font-size: 20px; color: #555; }
+
+.footer { padding-top: 24px; border-top: 1px solid #E0E0E0; display: flex; justify-content: space-between; font-size: 16px; color: #999; font-family: 'Inter',system-ui,sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="eyebrow">KBN 高光时刻</div>
+
+<div class="hero">
+  <div class="year-block">
+    <div class="year">2012</div>
+    <div class="year-sub">那一年，它是全球最赚钱的 iPhone 游戏</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="headline">iPhone 全年最高收入游戏</div>
+
+  <div class="stat-row">
+    <div class="stat-block">
+      <div class="stat-num">50<span style="font-size:36px">+</span></div>
+      <div class="stat-lbl">个国家霸榜</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">$3.6<span style="font-size:36px">亿</span></div>
+      <div class="stat-lbl">Kabam 同年总营收</div>
+    </div>
+  </div>
+
+  <div class="supporting">
+    <div class="sup-text">
+      KBN 领衔的四款游戏<br>合计营收超 <span class="sup-num">$1 亿美元</span>
+    </div>
+  </div>
+
+  <div class="now-tag">
+    <div class="now-dot"></div>
+    <div class="now-text">2026 年 1 月刚过完自己的 <strong style="color:#FF6B35">14 周年</strong>纪念日，仍在更新</div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>数据来源：Wikipedia/KoC · GamesBeat · Apple App Store</span>
+  <span>DECA × 聚锋</span>
+</div>
+
+</body>
+</html>

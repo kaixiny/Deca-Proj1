@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1242px; height: 1660px; overflow: hidden; background: #FFFFFF; }
+body {
+  font-family: 'PingFang SC','Microsoft YaHei',sans-serif;
+  display: flex; flex-direction: column;
+  padding: 100px 88px 80px 88px;
+}
+
+.top-tag {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 20px; font-weight: 700; color: #FF6B35;
+  letter-spacing: 4px; margin-bottom: 56px;
+}
+
+.hero { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+.big-sub { font-size: 36px; color: #999; font-weight: 400; margin-bottom: 16px; }
+
+.title-line1 {
+  font-size: 136px; font-weight: 900; color: #FF6B35;
+  line-height: 1; letter-spacing: -2px;
+}
+.title-line2 {
+  font-size: 136px; font-weight: 900; color: #000;
+  line-height: 1; letter-spacing: -2px; margin-bottom: 48px;
+}
+
+.accent-bar { width: 88px; height: 6px; background: #FF6B35; border-radius: 3px; margin-bottom: 56px; }
+
+.hook { font-size: 36px; color: #444; line-height: 1.65; margin-bottom: 64px; }
+.hook strong { color: #000; font-weight: 700; }
+
+/* Game badges */
+.games { display: flex; gap: 20px; margin-bottom: 56px; }
+.game-badge {
+  flex: 1; border: 2px solid #E0E0E0; border-radius: 16px;
+  padding: 28px 28px;
+}
+.badge-year {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 18px; font-weight: 700; color: #FF6B35;
+  margin-bottom: 8px;
+}
+.badge-name { font-size: 24px; font-weight: 700; color: #000; margin-bottom: 4px; }
+.badge-en { font-size: 14px; color: #999; margin-bottom: 8px; font-family: 'Inter',system-ui,sans-serif; }
+.badge-desc { font-size: 18px; color: #555; }
+
+.footer {
+  padding-top: 28px; border-top: 1px solid #E0E0E0;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.footer-brand {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 22px; font-weight: 900; color: #000; letter-spacing: 1px;
+}
+.footer-sub { font-size: 17px; color: #999; }
+</style>
+</head>
+<body>
+
+<div class="top-tag">DECA GAMES × 聚锋工作室</div>
+
+<div class="hero">
+  <div class="big-sub">一家德国公司的商业密码</div>
+  <div class="title-line1">老游戏</div>
+  <div class="title-line2">不死</div>
+  <div class="accent-bar"></div>
+  <div class="hook">
+    最老 <strong style="color:#FF6B35">14 年</strong>，仍在更新<br>
+    从《霍比特人》到「精灵对矮人」<br>
+    Kabam 的老游戏，Deca 在养活
+  </div>
+</div>
+
+<div class="games">
+  <div class="game-badge">
+    <div class="badge-year">2016 → 至今</div>
+    <div class="badge-name">精灵对抗矮人</div>
+    <div class="badge-en">Elves vs Dwarves（EVD）</div>
+    <div class="badge-desc">城建策略 · 前身《霍比特人》手游</div>
+  </div>
+  <div class="game-badge">
+    <div class="badge-year">2012 → 至今</div>
+    <div class="badge-name">卡米洛特王国</div>
+    <div class="badge-en">Kingdoms of Camelot（KBN）</div>
+    <div class="badge-desc">策略 MMO · 2012 年 iPhone 霸榜</div>
+  </div>
+</div>
+
+<div class="footer">
+  <span class="footer-brand">DECA × 聚锋</span>
+  <span class="footer-sub">数据来源：Embracer 官方公告 · Wikipedia</span>
+</div>
+
+</body>
+</html>

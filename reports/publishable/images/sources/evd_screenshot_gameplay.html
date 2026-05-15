@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #FFFFFF; }
+body { font-family: 'PingFang SC','Microsoft YaHei',sans-serif; display: flex; flex-direction: column; padding: 64px 100px 56px 100px; }
+
+.header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 52px; }
+.header-left {}
+.eyebrow {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 17px; font-weight: 700; color: #FF6B35;
+  letter-spacing: 3px; margin-bottom: 12px;
+}
+.title { font-size: 48px; font-weight: 700; color: #000; }
+.accent { width: 64px; height: 5px; background: #FF6B35; border-radius: 3px; margin-top: 16px; }
+.period {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 22px; font-weight: 600; color: #999;
+}
+
+/* 3-column grid */
+.cols { flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+
+.col { border: 1.5px solid #E0E0E0; border-radius: 20px; padding: 36px 36px; display: flex; flex-direction: column; }
+.col-head {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 28px;
+  padding-bottom: 20px; border-bottom: 1px solid #E0E0E0;
+}
+.col-num {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 32px; font-weight: 900; color: #FF6B35;
+  width: 44px; height: 44px;
+  border: 2.5px solid #FF6B35; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.col-title { font-size: 24px; font-weight: 700; color: #000; line-height: 1.3; }
+
+.item { display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start; }
+.item-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: #FF6B35;
+  margin-top: 9px; flex-shrink: 0;
+}
+.item-body {}
+.item-ver {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 14px; font-weight: 700; color: #FF6B35;
+  letter-spacing: 1px; margin-bottom: 3px;
+}
+.item-text { font-size: 20px; font-weight: 600; color: #000; line-height: 1.35; }
+.item-sub { font-size: 16px; color: #666; margin-top: 2px; line-height: 1.4; }
+
+.footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid #E0E0E0;
+  display: flex; justify-content: space-between; font-size: 14px; color: #999;
+  font-family: 'Inter',system-ui,sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="eyebrow">EVD 长青化策略</div>
+    <div class="title">三条主线并行推进</div>
+    <div class="accent"></div>
+  </div>
+  <div class="period">2024 — 2026</div>
+</div>
+
+<div class="cols">
+
+  <div class="col">
+    <div class="col-head">
+      <div class="col-num">1</div>
+      <div class="col-title">养成天花板<br>持续上移</div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">v16.8.0 · 2024-02</div>
+        <div class="item-text">新增第六城市建筑「祭坛」</div>
+        <div class="item-sub">新部队类型、科技分支、英雄与坐骑</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">v16.9.0 · 2024-11</div>
+        <div class="item-text">英雄升星扩展至 6–10 星</div>
+        <div class="item-sub">进一步拉高养成上限</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">v17.0.2 · 2025-12</div>
+        <div class="item-text">坐骑升星扩展至 9 星</div>
+        <div class="item-sub">解锁专属行军皮肤</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="col-head">
+      <div class="col-num">2</div>
+      <div class="col-title">皮肤付费<br>成体系</div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">v16.8.1 · 2024-03</div>
+        <div class="item-text">城堡皮肤 Slime Balloon Castle</div>
+        <div class="item-sub">首批轻量皮肤付费节点</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">v16.8.3 · 2024-04</div>
+        <div class="item-text">新坐骑 Stellar Dragon</div>
+        <div class="item-sub">坐骑付费点扩展</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">v16.9.8 · 2024-08</div>
+        <div class="item-text">神秘坐骑装备系统上线</div>
+        <div class="item-sub">新城堡皮肤 + 行军皮肤</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="col-head">
+      <div class="col-num">3</div>
+      <div class="col-title">变现机制<br>合规升级</div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">v16.8.9 · 2024-09</div>
+        <div class="item-text">转盘加入保底 + 连抽机制</div>
+        <div class="item-sub">主动适配全球合规趋势</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">~2026 年 3–4 月</div>
+        <div class="item-text">Battle Pass 上线</div>
+        <div class="item-sub">订阅式变现新入口</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-dot"></div>
+      <div class="item-body">
+        <div class="item-ver">~2026 年 4 月</div>
+        <div class="item-text">Campaign Legendary 章节</div>
+        <div class="item-sub">付费内容持续扩展</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <span>数据来源：Apple App Store 版本历史 · apk.gold</span>
+  <span>DECA × 聚锋</span>
+</div>
+
+</body>
+</html>

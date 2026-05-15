@@ -26,7 +26,10 @@
       "Bash(Get-Item \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\drafts\\\\playwright-test\\\\bilibili_homepage.png\")",
       "Bash(Select-Object Name, Length, LastWriteTime)",
       "mcp__playwright__browser_resize",
-      "PowerShell($text = Get-Content \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\reports\\\\publishable\\\\xiaohongshu_post.md\" -Raw -Encoding UTF8; $cjk = [regex]::Matches\\($text, '[一-鿿㐀-䶿]'\\); Write-Output \"小红书版中文字符数: $\\($cjk.Count\\)\")"
+      "PowerShell($text = Get-Content \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\reports\\\\publishable\\\\xiaohongshu_post.md\" -Raw -Encoding UTF8; $cjk = [regex]::Matches\\($text, '[一-鿿㐀-䶿]'\\); Write-Output \"小红书版中文字符数: $\\($cjk.Count\\)\")",
+      "PowerShell(New-Item *)",
+      "PowerShell(python --version 2>&1; node --version 2>&1)",
+      "PowerShell(Start-Process -NoNewWindow python -ArgumentList \"-m\", \"http.server\", \"8765\", \"--directory\", \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\reports\\\\publishable\\\\images\\\\sources\")"
     ]
   }
 }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #FFFFFF; }
+body { font-family: 'PingFang SC','Microsoft YaHei',sans-serif; display: flex; flex-direction: column; padding: 64px 100px 56px 100px; }
+
+.header { margin-bottom: 44px; }
+.eyebrow { font-family: 'Inter',system-ui,sans-serif; font-size: 17px; font-weight: 700; color: #FF6B35; letter-spacing: 3px; margin-bottom: 12px; }
+.title { font-size: 50px; font-weight: 700; color: #000; }
+.accent { width: 64px; height: 5px; background: #FF6B35; border-radius: 3px; margin-top: 16px; }
+
+/* Table */
+.table { flex: 1; display: flex; flex-direction: column; gap: 0; }
+
+.table-head {
+  display: grid; grid-template-columns: 280px 1fr 80px 1fr;
+  gap: 0; margin-bottom: 12px;
+}
+.th { font-size: 18px; font-weight: 700; color: #999; padding: 0 28px; }
+.th.game {
+  font-family: 'Inter',system-ui,sans-serif;
+  font-size: 22px; font-weight: 900; color: #000; text-align: center;
+}
+.th.vs { text-align: center; color: #CCC; font-size: 20px; font-weight: 700; }
+
+.row {
+  display: grid; grid-template-columns: 280px 1fr 80px 1fr;
+  gap: 0; border: 1.5px solid #E0E0E0; border-radius: 16px;
+  margin-bottom: 14px; overflow: hidden; min-height: 110px;
+}
+.row:nth-child(odd) { background: #FAFAFA; }
+
+.cell {
+  padding: 22px 28px; display: flex; align-items: center;
+}
+.cell.dim {
+  background: transparent; border-right: 1.5px solid #E0E0E0;
+}
+.dim-label { font-size: 22px; font-weight: 700; color: #000; }
+.dim-icon {
+  font-size: 28px; margin-right: 12px; flex-shrink: 0;
+}
+.cell.evd { border-right: 1px solid #F0F0F0; }
+.cell.separator { justify-content: center; border-right: 1px solid #F0F0F0; }
+.vs-txt { font-family: 'Inter',system-ui,sans-serif; font-size: 16px; font-weight: 700; color: #CCC; }
+
+.item-list { display: flex; flex-direction: column; gap: 6px; }
+.item-tag {
+  display: inline-block; padding: 3px 12px;
+  background: #FFF3EE; border-radius: 10px;
+  font-size: 18px; color: #FF6B35; font-weight: 600;
+  margin-bottom: 2px;
+}
+.item-text { font-size: 20px; color: #222; line-height: 1.45; }
+
+.footer { padding-top: 18px; border-top: 1px solid #E0E0E0;
+  display: flex; justify-content: space-between;
+  font-size: 14px; color: #999; font-family: 'Inter',system-ui,sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="eyebrow">长青化方法论</div>
+  <div class="title">EVD vs KBN — 五维运营策略对比</div>
+  <div class="accent"></div>
+</div>
+
+<div class="table">
+
+  <div class="table-head">
+    <div class="th">策略维度</div>
+    <div class="th game">EVD（精灵对抗矮人）</div>
+    <div class="th vs"></div>
+    <div class="th game">KBN（卡米洛特王国）</div>
+  </div>
+
+  <div class="row">
+    <div class="cell dim">
+      <span class="dim-icon">📈</span>
+      <span class="dim-label">养成天花板</span>
+    </div>
+    <div class="cell evd">
+      <div class="item-list">
+        <div class="item-text">祭坛（第六城市建筑）· 英雄 10 星 · 坐骑 9 星</div>
+      </div>
+    </div>
+    <div class="cell separator"><span class="vs-txt">VS</span></div>
+    <div class="cell">
+      <div class="item-list">
+        <div class="item-text">传奇骑士 · 装备进化系统</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell dim">
+      <span class="dim-icon">🎨</span>
+      <span class="dim-label">皮肤付费</span>
+    </div>
+    <div class="cell evd">
+      <div class="item-list">
+        <div class="item-text">城堡皮肤 · 坐骑皮肤 · 神秘坐骑装备</div>
+      </div>
+    </div>
+    <div class="cell separator"><span class="vs-txt">VS</span></div>
+    <div class="cell">
+      <div class="item-list">
+        <div class="item-text">城堡+英雄+行军皮肤三套并行（v22.4.0 同步上线）</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell dim">
+      <span class="dim-icon">💰</span>
+      <span class="dim-label">变现机制</span>
+    </div>
+    <div class="cell evd">
+      <div class="item-list">
+        <div class="item-text">转盘保底 · Battle Pass（约 2026 Q1）</div>
+      </div>
+    </div>
+    <div class="cell separator"><span class="vs-txt">VS</span></div>
+    <div class="cell">
+      <div class="item-list">
+        <div class="item-text">Special Cards · 城市光晕系统</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell dim">
+      <span class="dim-icon">🔧</span>
+      <span class="dim-label">稳定性维护</span>
+    </div>
+    <div class="cell evd">
+      <div class="item-list">
+        <div class="item-text">每个主要版本附详细 Bug 修复清单</div>
+      </div>
+    </div>
+    <div class="cell separator"><span class="vs-txt">VS</span></div>
+    <div class="cell">
+      <div class="item-list">
+        <div class="item-text">v22.8.x 系列密集技术修复（渲染·登录·兼容性）</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell dim">
+      <span class="dim-icon">🎉</span>
+      <span class="dim-label">周年营销</span>
+    </div>
+    <div class="cell evd">
+      <div class="item-list">
+        <div class="item-text">季节性城堡皮肤（v16.7.x 系列）</div>
+      </div>
+    </div>
+    <div class="cell separator"><span class="vs-txt">VS</span></div>
+    <div class="cell">
+      <div class="item-list">
+        <div class="item-text"><span style="color:#FF6B35;font-weight:700">14 周年</span>纪念城市皮肤（2026-01，v22.8.0）</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <span>数据来源：Apple App Store 版本历史 · Embracer 官方公告</span>
+  <span>DECA × 聚锋</span>
+</div>
+
+</body>
+</html>

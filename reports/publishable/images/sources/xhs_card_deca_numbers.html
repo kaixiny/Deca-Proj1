@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 1242px;
+      height: 1242px;
+      overflow: hidden;
+    }
+
+    body {
+      background: #FFFFFF;
+      font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+      display: flex;
+      flex-direction: column;
+      padding: 80px 80px 56px 80px;
+    }
+
+    /* ── Header ── */
+    .header {
+      margin-bottom: 52px;
+    }
+
+    .eyebrow {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #FF6B35;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .title {
+      font-size: 54px;
+      font-weight: 700;
+      color: #000000;
+      line-height: 1.15;
+    }
+
+    .accent-bar {
+      width: 64px;
+      height: 5px;
+      background: #FF6B35;
+      margin-top: 22px;
+      border-radius: 3px;
+    }
+
+    /* ── 2×2 Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      flex: 1;
+      margin-bottom: 40px;
+    }
+
+    .stat-card {
+      border: 1.5px solid #E0E0E0;
+      border-radius: 20px;
+      padding: 44px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .stat-number {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      font-size: 72px;
+      font-weight: 900;
+      color: #FF6B35;
+      line-height: 1;
+      margin-bottom: 14px;
+      letter-spacing: -2px;
+    }
+
+    .stat-number .sm {
+      font-size: 40px;
+      letter-spacing: -1px;
+    }
+
+    .stat-label {
+      font-size: 26px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .stat-desc {
+      font-size: 20px;
+      color: #666666;
+      line-height: 1.55;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 1px solid #E0E0E0;
+      padding-top: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .source {
+      font-size: 17px;
+      color: #999999;
+    }
+
+    .brand {
+      font-size: 17px;
+      color: #CCCCCC;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="eyebrow">DECA GAMES</div>
+    <div class="title">关键数字</div>
+    <div class="accent-bar"></div>
+  </div>
+
+  <div class="grid">
+
+    <div class="stat-card">
+      <div class="stat-number">2016</div>
+      <div class="stat-label">柏林创立</div>
+      <div class="stat-desc">德国，专注老游戏<br>长线 Live Ops 运营</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-number">80 <span class="sm">→ 230<sup style="font-size:26px;vertical-align:super">+</sup></span></div>
+      <div class="stat-label">团队规模</div>
+      <div class="stat-desc">18 个月内快速扩张</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-number">26</div>
+      <div class="stat-label">个国家覆盖</div>
+      <div class="stat-desc">全球分布式<br>远程团队</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-number">20<span class="sm">+</span></div>
+      <div class="stat-label">款游戏组合</div>
+      <div class="stat-desc">18 个月内翻倍增长</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span class="source">数据来源：PocketGamer · pocketgamer.biz</span>
+    <span class="brand">DECA × 聚锋</span>
+  </div>
+
+</body>
+</html>
