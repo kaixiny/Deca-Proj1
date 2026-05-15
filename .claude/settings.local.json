@@ -29,7 +29,15 @@
       "PowerShell($text = Get-Content \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\reports\\\\publishable\\\\xiaohongshu_post.md\" -Raw -Encoding UTF8; $cjk = [regex]::Matches\\($text, '[一-鿿㐀-䶿]'\\); Write-Output \"小红书版中文字符数: $\\($cjk.Count\\)\")",
       "PowerShell(New-Item *)",
       "PowerShell(python --version 2>&1; node --version 2>&1)",
-      "PowerShell(Start-Process -NoNewWindow python -ArgumentList \"-m\", \"http.server\", \"8765\", \"--directory\", \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\reports\\\\publishable\\\\images\\\\sources\")"
+      "PowerShell(Start-Process -NoNewWindow python -ArgumentList \"-m\", \"http.server\", \"8765\", \"--directory\", \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\reports\\\\publishable\\\\images\\\\sources\")",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_handle_dialog",
+      "mcp__playwright__browser_run_code_unsafe",
+      "mcp__playwright__browser_file_upload",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_network_requests"
     ]
   }
 }

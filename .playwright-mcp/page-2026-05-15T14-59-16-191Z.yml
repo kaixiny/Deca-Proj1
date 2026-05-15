@@ -1,0 +1,246 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6] [cursor=pointer]: 
+      - link " 主站" [ref=e7] [cursor=pointer]:
+        - /url: //www.bilibili.com
+        - generic [ref=e8]: 
+        - text: 主站
+    - generic [ref=e9]:
+      - generic [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: 用花生创作视频
+        - generic [ref=e12]: 
+      - generic [ref=e16] [cursor=pointer]: 
+      - generic [ref=e18]:
+        - generic [ref=e19]: "34"
+        - link "" [ref=e20] [cursor=pointer]:
+          - /url: //message.bilibili.com/new/
+          - generic [ref=e21]: 
+      - generic [ref=e23]: 在bilibili星球的第2292天
+      - generic [ref=e24]:
+        - text:      
+        - link [ref=e26] [cursor=pointer]:
+          - /url: //space.bilibili.com
+          - img [ref=e27]
+  - generic [ref=e28]:
+    - region "scrollable content" [ref=e35]:
+      - generic [ref=e36]:
+        - link "投稿" [ref=e38] [cursor=pointer]:
+          - /url: /platform/upload?page_from=creative_home_top_upload
+          - generic [ref=e39]: 
+          - text: 投稿
+        - list [ref=e40]:
+          - generic [ref=e42]:
+            - generic [ref=e45] [cursor=pointer]:
+              - generic [ref=e46]: 
+              - generic [ref=e47]: 首页
+            - generic [ref=e50] [cursor=pointer]:
+              - generic [ref=e51]: 
+              - generic [ref=e52]: 内容管理
+              - generic [ref=e53]: 
+            - generic [ref=e56] [cursor=pointer]:
+              - generic [ref=e57]: 
+              - generic [ref=e58]: 数据中心
+            - generic [ref=e61] [cursor=pointer]:
+              - generic [ref=e62]: 
+              - generic [ref=e63]: 粉丝管理
+            - generic [ref=e66] [cursor=pointer]:
+              - generic [ref=e67]: 
+              - generic [ref=e68]: 互动管理
+              - generic [ref=e69]: 
+            - generic [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]: 
+              - generic [ref=e74]: 收益管理
+              - generic [ref=e75]: 
+            - generic [ref=e79] [cursor=pointer]:
+              - generic [ref=e81]: 花生
+              - generic: 视频创作
+            - generic [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]:
+                - generic [ref=e86]: 
+                - generic [ref=e87]: 创作成长
+                - generic [ref=e88]: 
+              - generic [ref=e89]:
+                - generic [ref=e93]: 任务中心
+                - generic [ref=e97]: 必火推广
+                - link "创作学院" [ref=e100]:
+                  - /url: https://member.bilibili.com/academy
+                  - generic [ref=e101]: 创作学院
+            - generic [ref=e104] [cursor=pointer]:
+              - generic [ref=e105]: 
+              - generic [ref=e106]: 创作权益
+              - generic [ref=e107]: 
+            - generic [ref=e110] [cursor=pointer]:
+              - generic [ref=e111]: 
+              - generic [ref=e112]: 社区公约
+            - generic [ref=e115] [cursor=pointer]:
+              - generic [ref=e116]: 
+              - generic [ref=e117]: 创作设置
+    - text:      
+    - generic [ref=e118]:
+      - text: 
+      - iframe [ref=e125]:
+        - generic [active] [ref=f8e1]:
+          - generic [ref=f8e2]:
+            - generic [ref=f8e4]:
+              - img [ref=f8e11]
+              - img [ref=f8e20]
+              - img [ref=f8e30] [cursor=pointer]
+              - img [ref=f8e41] [cursor=pointer]
+              - img [ref=f8e55] [cursor=pointer]
+              - img [ref=f8e63] [cursor=pointer]
+              - img [ref=f8e72] [cursor=pointer]
+              - img [ref=f8e80] [cursor=pointer]
+              - img [ref=f8e88] [cursor=pointer]
+              - img [ref=f8e97] [cursor=pointer]
+              - img [ref=f8e106] [cursor=pointer]
+              - img [ref=f8e117] [cursor=pointer]
+              - img [ref=f8e131] [cursor=pointer]
+              - img [ref=f8e142] [cursor=pointer]
+              - img [ref=f8e155] [cursor=pointer]
+              - img [ref=f8e165] [cursor=pointer]
+              - generic [ref=f8e169]:
+                - img [ref=f8e175] [cursor=pointer]
+                - generic: "*"
+              - img [ref=f8e184] [cursor=pointer]
+              - img [ref=f8e194] [cursor=pointer]
+              - img [ref=f8e204] [cursor=pointer]
+              - img [ref=f8e216] [cursor=pointer]
+              - img [ref=f8e226] [cursor=pointer]
+              - img [ref=f8e233] [cursor=pointer]
+            - generic [ref=f8e236]:
+              - generic [ref=f8e238]:
+                - generic [ref=f8e239]:
+                  - generic [ref=f8e240]:
+                    - generic [ref=f8e241]: 目录
+                    - img [ref=f8e242] [cursor=pointer]
+                  - generic [ref=f8e244]:
+                    - text: 对文档内容应用“标题”样式
+                    - text: 即可生成目录
+                - generic [ref=f8e245] [cursor=pointer]: 目录
+              - generic [ref=f8e246]:
+                - generic [ref=f8e247]:
+                  - textbox "请输入标题（建议30字以内）" [ref=f8e249]
+                  - textbox [ref=f8e251]:
+                    - paragraph [ref=f8e252]: 请输入正文
+                - generic [ref=f8e255]: 0/100000
+                - generic [ref=f8e258]:
+                  - generic [ref=f8e259]:
+                    - generic [ref=f8e260]: 发布设置
+                    - generic [ref=f8e261]:
+                      - generic [ref=f8e262]:
+                        - img [ref=f8e263]
+                        - generic [ref=f8e271]: "专栏标签改为在正文内直接输入 #文案# 来添加啦"
+                      - img [ref=f8e273] [cursor=pointer]
+                  - generic [ref=f8e275]:
+                    - generic [ref=f8e276]:
+                      - generic [ref=f8e277]: 可见范围
+                      - generic [ref=f8e279]:
+                        - radio "所有人可见" [ref=f8e280] [cursor=pointer]:
+                          - radio "所有人可见" [checked] [ref=f8e282]
+                          - generic [ref=f8e284]: 所有人可见
+                        - radio "仅自己可见（将不支持分享、商业推广）" [ref=f8e285] [cursor=pointer]:
+                          - radio "仅自己可见（将不支持分享、商业推广）" [ref=f8e287]
+                          - generic [ref=f8e289]: 仅自己可见（将不支持分享、商业推广）
+                    - generic [ref=f8e290]:
+                      - generic [ref=f8e291]: 自定义封面
+                      - generic [ref=f8e293]:
+                        - generic [ref=f8e294]:
+                          - checkbox
+                        - generic [ref=f8e299]: （未设置自定义封面则自动抓取正文开头部分文字作为封面）
+                    - generic [ref=f8e300]:
+                      - generic [ref=f8e301]: 评论开关
+                      - generic [ref=f8e302]:
+                        - generic [ref=f8e303]:
+                          - checkbox [checked]
+                        - generic [ref=f8e308]: （关闭后，用户无法在你的专栏发表评论）
+                    - generic [ref=f8e309]:
+                      - generic [ref=f8e310]: 精选评论
+                      - generic [ref=f8e311]:
+                        - generic [ref=f8e312]:
+                          - checkbox
+                        - generic [ref=f8e317]: （开启后，经过你筛选的评论才会向用户展示）
+                    - generic [ref=f8e318]:
+                      - generic [ref=f8e319]: 定时发布
+                      - generic [ref=f8e321]:
+                        - generic [ref=f8e323]:
+                          - checkbox
+                        - generic [ref=f8e328]: （可选时间为 当前+2小时~7天内，设置时间以北京时间UTC+8为准）
+                    - generic [ref=f8e329]:
+                      - generic [ref=f8e330]: 创作声明
+                      - generic [ref=f8e331]:
+                        - checkbox "声明此文章为原创，未经授权禁止转载《原创声明》" [ref=f8e333] [cursor=pointer]:
+                          - checkbox "声明此文章为原创，未经授权禁止转载《原创声明》" [ref=f8e335]
+                          - generic [ref=f8e337]: 声明此文章为原创，未经授权禁止转载《原创声明》
+                        - checkbox "AI辅助创作声明 勾选后，图片将标识该内容使用人工智能合成技术" [ref=f8e339] [cursor=pointer]:
+                          - checkbox "AI辅助创作声明 勾选后，图片将标识该内容使用人工智能合成技术" [ref=f8e341]
+                          - generic [ref=f8e344]:
+                            - generic [ref=f8e345]: AI辅助创作声明
+                            - generic [ref=f8e346]: 勾选后，图片将标识该内容使用人工智能合成技术
+                    - generic [ref=f8e347]:
+                      - generic [ref=f8e348]: 话题
+                      - button "添加话题" [ref=f8e351] [cursor=pointer]:
+                        - img [ref=f8e352]
+                        - text: 添加话题
+                    - generic [ref=f8e354]:
+                      - generic [ref=f8e355]: 文集
+                      - button "选择文集" [ref=f8e358] [cursor=pointer]:
+                        - img [ref=f8e359]
+                        - text: 选择文集
+              - generic [ref=f8e362]:
+                - img [ref=f8e364] [cursor=pointer]
+                - generic [ref=f8e368]:
+                  - img [ref=f8e369]
+                  - img [ref=f8e371]
+                  - img [ref=f8e373]
+                  - img [ref=f8e375]
+                  - generic [ref=f8e377]:
+                    - generic [ref=f8e378]:
+                      - generic [ref=f8e379]: 22:59
+                      - generic [ref=f8e380]:
+                        - img [ref=f8e381]
+                        - img [ref=f8e383]
+                        - img [ref=f8e385]
+                    - generic [ref=f8e391]:
+                      - generic [ref=f8e392]:
+                        - img [ref=f8e393]
+                        - img [ref=f8e395]
+                      - generic [ref=f8e398]:
+                        - generic [ref=f8e399]:
+                          - generic: 标题在手，三连我有
+                        - generic [ref=f8e401]:
+                          - img [ref=f8e403]
+                          - generic [ref=f8e405]:
+                            - generic [ref=f8e406]: bili_69612765987
+                            - generic [ref=f8e407]: 2233年06月26日 22:33
+                        - generic [ref=f8e409]:
+                          - generic: 这是正文提示语
+                      - generic [ref=f8e410]:
+                        - generic [ref=f8e411]: 点我发评论
+                        - generic [ref=f8e412]:
+                          - generic [ref=f8e413]:
+                            - img [ref=f8e414]
+                            - generic [ref=f8e417]: "1888"
+                          - generic [ref=f8e418]:
+                            - img [ref=f8e419]
+                            - generic [ref=f8e421]: "233"
+                          - generic [ref=f8e422]:
+                            - img [ref=f8e423]
+                            - generic [ref=f8e425]: "233"
+                          - generic [ref=f8e426]:
+                            - img [ref=f8e427]
+                            - generic [ref=f8e429]: 2233万
+                - generic [ref=f8e432]: 夜间模式
+            - generic [ref=f8e436]:
+              - button "发布设置" [ref=f8e438] [cursor=pointer]:
+                - generic [ref=f8e439]: 发布设置
+                - img [ref=f8e440]
+              - generic [ref=f8e442]:
+                - button "保存为草稿" [ref=f8e443] [cursor=pointer]
+                - button "发布" [ref=f8e444] [cursor=pointer]
+          - generic: "*"
+      - generic [ref=e128]:
+        - text:      
+        - generic [ref=e129] [cursor=pointer]:
+          - img [ref=e131]
+          - generic [ref=e132]: 遇到问题
