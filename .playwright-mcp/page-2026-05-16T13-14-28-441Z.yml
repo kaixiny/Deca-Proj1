@@ -1,0 +1,389 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e6] [cursor=pointer]: 遇到问题
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - generic [ref=e12]:
+          - img [ref=e13]
+          - generic [ref=e16]: 创作服务平台
+        - generic [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+          - generic [ref=e20]: Jmno
+          - img [ref=e21]
+      - main [ref=e23]:
+        - generic [ref=e25]:
+          - generic [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+            - generic [ref=e32]: 发布笔记
+            - img [ref=e33]
+          - generic [ref=e35] [cursor=pointer]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - img [ref=e40]
+                - generic [ref=e43]: 首页
+              - generic [ref=e44]:
+                - img [ref=e47]
+                - generic [ref=e50]: 笔记管理
+              - generic [ref=e52]:
+                - img [ref=e55]
+                - generic [ref=e57]: 数据看板
+                - img [ref=e60]
+              - generic [ref=e62]:
+                - img [ref=e65]
+                - generic [ref=e68]: 活动中心
+              - generic [ref=e69]:
+                - img [ref=e72]
+                - generic [ref=e75]: 笔记灵感
+              - generic [ref=e76]:
+                - img [ref=e79]
+                - generic [ref=e82]: 创作学院
+              - generic [ref=e83]:
+                - img [ref=e86]
+                - generic [ref=e89]: 创作百科
+            - generic [ref=e90]:
+              - img [ref=e92]
+              - generic [ref=e94]: 收起侧边栏
+        - generic [ref=e604]:
+          - generic [ref=e605]:
+            - generic [ref=e608]:
+              - generic [ref=e609]:
+                - generic [ref=e610]:
+                  - generic [ref=e611]: 图片编辑
+                  - generic [ref=e612]: 6/18
+                  - img [ref=e614] [cursor=pointer]
+                - generic [ref=e616] [cursor=pointer]:
+                  - img [ref=e617]
+                  - generic [ref=e620]: 获取封面建议
+              - generic [ref=e623]:
+                - img [ref=e625] [cursor=pointer]
+                - generic [ref=e630]: "1"
+                - generic [ref=e635]: "2"
+                - generic [ref=e640]: "3"
+                - generic [ref=e645]: "4"
+                - generic [ref=e650]: "5"
+                - generic [ref=e655]: "6"
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - textbox "填写标题会有更多赞哦" [ref=e663]: 收购"濒死老游戏"的德国公司，有多稳？
+                - generic [ref=e664] [cursor=pointer]:
+                  - img [ref=e665]
+                  - generic [ref=e666]: 智能标题
+                  - img [ref=e667]
+              - generic [ref=e669]:
+                - textbox [active] [ref=e672]:
+                  - paragraph [ref=e983]: 有没有一款手游，你以为它早就关服了，结果发现它还在更新？
+                  - paragraph [ref=e984]: 背后可能是同一家公司——Deca Games，专门把老游戏"救活"的德国公司，北京还有个50人的研发团队。
+                  - paragraph [ref=e985]
+                  - paragraph [ref=e986]: 【这家德国公司专门收购老游戏】
+                  - paragraph [ref=e987]
+                  - paragraph [ref=e988]: 2016年，前Kabam高管Ken Go在柏林创立Deca Games：大厂为了新游会放弃老游戏，但老游戏还有忠实用户——买下来，配专业运营团队持续养着，就是一门稳定生意。
+                  - paragraph [ref=e989]
+                  - paragraph [ref=e990]: 2020年Deca被瑞典游戏巨头Embracer收购；2021年又收购了北京聚锋工作室：50人团队，8款海外手游，15万日活，99%以上收入来自国际市场。这些游戏国内没人知道，海外玩家还在老老实实充钱。
+                  - paragraph [ref=e991]
+                  - paragraph [ref=e992]: 【你可能玩过的两款老手游】
+                  - paragraph [ref=e993]
+                  - paragraph [ref=e994]: 聚锋旗下最有代表性的两款：
+                  - paragraph [ref=e995]
+                  - paragraph [ref=e996]: 《精灵对抗矮人》（EVD）——前身是2012年Kabam与华纳联合做的《霍比特人》手游，IP到期后换壳保留玩法，改名活到今天，2026年还在出新内容。
+                  - paragraph [ref=e997]
+                  - paragraph [ref=e998]: 《卡米洛特王国：北征》（KBN）——2012年曾是iPhone全年最高收入游戏，50多个国家霸榜。几经转手落到Deca手里，2026年1月刚过完14周年纪念，还出了限定皮肤。
+                  - paragraph [ref=e999]
+                  - paragraph [ref=e1000]: 两款都超过10年历史，2024-2026年仍在密集更新：新建筑、新皮肤、新坐骑、Battle Pass……
+                  - paragraph [ref=e1001]
+                  - paragraph [ref=e1002]: 【他们的运营秘诀】
+                  - paragraph [ref=e1003]
+                  - paragraph [ref=e1004]: 三个核心动作：
+                  - paragraph [ref=e1005]
+                  - paragraph [ref=e1006]: ① 养成天花板持续上移 — 英雄升星、坐骑升星、城市建筑层层加码。只要天花板还在，重度玩家就有东西可追，付费周期就不会断。
+                  - paragraph [ref=e1007]
+                  - paragraph [ref=e1008]: ② 皮肤付费和强度付费双轨并行 — 外观给轻氪玩家，数值给重氪玩家，两头都不放过。
+                  - paragraph [ref=e1009]
+                  - paragraph [ref=e1010]: ③ 变现机制跟着全球合规走 — 转盘加保底、引入Battle Pass，适配监管趋势，减少被下架风险。
+                  - paragraph [ref=e1011]
+                  - paragraph [ref=e1012]: 核心逻辑：不靠新用户，靠老用户的持续忠诚。
+                  - paragraph [ref=e1013]
+                  - paragraph [ref=e1014]: 你有没有"以为早死了结果还在更新"的手游经历？
+                  - paragraph [ref=e1015]
+                  - paragraph [ref=e1016]: 国内哪款老手游最值得被这样救活？评论区聊聊 👀
+                  - paragraph [ref=e1017]:
+                    - generic [ref=e1181]:
+                      - text: "#游戏运营"
+                      - generic [ref=e1182]: "[话题]#"
+                    - text: "#商业故事"
+                - generic [ref=e676]:
+                  - generic [ref=e975] [cursor=pointer]: "#我在小红书做游戏"
+                  - generic [ref=e976] [cursor=pointer]: "#游戏IF剧场"
+                  - generic [ref=e977] [cursor=pointer]: "#榨干设备howto"
+                  - generic [ref=e978] [cursor=pointer]: "#vibecoding大赏"
+                  - generic [ref=e979] [cursor=pointer]: "#游戏发行人"
+                  - generic [ref=e980] [cursor=pointer]:
+                    - text: 更多
+                    - img [ref=e981]
+              - generic [ref=e677]:
+                - generic [ref=e678]:
+                  - generic [ref=e680]:
+                    - button "话题" [ref=e681] [cursor=pointer]:
+                      - img [ref=e682]
+                      - text: 话题
+                    - button [ref=e684] [cursor=pointer]:
+                      - img [ref=e685]
+                  - button "用户" [ref=e688] [cursor=pointer]:
+                    - img [ref=e689]
+                    - text: 用户
+                  - button "表情" [ref=e692] [cursor=pointer]:
+                    - img [ref=e693]
+                    - text: 表情
+                - generic [ref=e698]:
+                  - text: "773"
+                  - generic [ref=e699]: /1000
+            - generic [ref=e701]:
+              - generic [ref=e702]:
+                - generic [ref=e703]: 活动话题
+                - generic [ref=e704] [cursor=pointer]:
+                  - text: 更多
+                  - img [ref=e705]
+              - generic [ref=e708]:
+                - generic [ref=e709] [cursor=pointer]:
+                  - img [ref=e711]
+                  - generic [ref=e712]:
+                    - generic [ref=e713]:
+                      - img [ref=e714]
+                      - generic [ref=e715]: 光遇
+                    - generic [ref=e716]:
+                      - generic [ref=e717]:
+                        - img [ref=e718]
+                        - text: 添加话题
+                      - generic [ref=e719]:
+                        - text: 活动详情
+                        - img [ref=e720]
+                - generic [ref=e721] [cursor=pointer]:
+                  - img [ref=e723]
+                  - generic [ref=e724]:
+                    - generic [ref=e725]:
+                      - img [ref=e726]
+                      - generic [ref=e727]: 世界之外
+                    - generic [ref=e728]:
+                      - generic [ref=e729]:
+                        - img [ref=e730]
+                        - text: 添加话题
+                      - generic [ref=e731]:
+                        - text: 活动详情
+                        - img [ref=e732]
+            - generic [ref=e733]:
+              - generic [ref=e734]:
+                - generic [ref=e735]: 内容设置
+                - generic [ref=e736] [cursor=pointer]:
+                  - generic [ref=e737]: 收起
+                  - img [ref=e738]
+              - generic [ref=e740]:
+                - generic [ref=e741] [cursor=pointer]:
+                  - img [ref=e743]
+                  - generic [ref=e745]:
+                    - generic [ref=e746]: 加入合集
+                    - generic [ref=e747]: 汇集系列视频，有利于连续性观看
+                  - generic [ref=e748]:
+                    - img [ref=e749]
+                    - text: 创建合集
+                - generic [ref=e755]:
+                  - img [ref=e757]
+                  - generic [ref=e760]: 原创声明
+                  - generic [ref=e765] [cursor=pointer]:
+                    - checkbox
+                - generic [ref=e770]:
+                  - img [ref=e772]
+                  - generic [ref=e777]: 添加内容类型声明
+                  - img [ref=e780]
+              - generic [ref=e783]: 添加组件
+              - generic [ref=e784]:
+                - generic [ref=e789] [cursor=pointer]:
+                  - img [ref=e791]
+                  - generic [ref=e793]:
+                    - textbox [ref=e794]
+                    - generic [ref=e795]: 添加地点
+                  - img [ref=e798]
+                - generic [ref=e804] [cursor=pointer]:
+                  - img [ref=e806]
+                  - generic [ref=e810]:
+                    - textbox [ref=e811]
+                    - generic [ref=e812]: 选择群聊
+                  - img [ref=e815]
+                - generic [ref=e819] [cursor=pointer]:
+                  - generic [ref=e820]:
+                    - img [ref=e822]
+                    - generic [ref=e825]: 标记地点或标记朋友
+                  - img [ref=e827]
+                - generic [ref=e831] [cursor=pointer]:
+                  - generic [ref=e832]:
+                    - img [ref=e834]
+                    - generic [ref=e836]: 添加路线
+                  - img [ref=e838]
+                - generic [ref=e842] [cursor=pointer]:
+                  - generic [ref=e843]:
+                    - img [ref=e845]
+                    - generic [ref=e847]: 选择文件
+                  - img [ref=e849]
+            - generic [ref=e851]:
+              - generic [ref=e852]:
+                - generic [ref=e853]: 更多设置
+                - generic [ref=e854] [cursor=pointer]:
+                  - generic [ref=e855]: 收起
+                  - img [ref=e856]
+              - generic [ref=e858]:
+                - generic [ref=e861]:
+                  - img [ref=e863]
+                  - generic [ref=e865]: 允许合拍
+                  - generic [ref=e870] [cursor=pointer]:
+                    - checkbox [checked]
+                - generic [ref=e874]:
+                  - img [ref=e876]
+                  - generic [ref=e878]: 允许正文复制
+                  - generic [ref=e883] [cursor=pointer]:
+                    - checkbox [checked]
+                - generic [ref=e889]:
+                  - img [ref=e891]
+                  - generic [ref=e894]: 公开可见
+                  - img [ref=e897]
+                - generic [ref=e902]:
+                  - img [ref=e904]
+                  - generic [ref=e907]: 定时发布
+                  - generic [ref=e912] [cursor=pointer]:
+                    - checkbox
+          - generic [ref=e916]:
+            - generic [ref=e918]:
+              - generic [ref=e919] [cursor=pointer]: 笔记预览
+              - generic [ref=e920] [cursor=pointer]: 封面预览
+            - generic [ref=e923]:
+              - generic [ref=e925]:
+                - img "头像" [ref=e926]
+                - generic [ref=e927]: Jmno
+              - generic [ref=e929]:
+                - generic [ref=e964]: 1/6
+                - generic [ref=e965]: 收购"濒死老游戏"的德国公司，有多稳？
+                - generic [ref=e1018]:
+                  - paragraph [ref=e1219]: 有没有一款手游，你以为它早就关服了，结果发现它还在更新？
+                  - paragraph [ref=e1220]: 背后可能是同一家公司——Deca Games，专门把老游戏"救活"的德国公司，北京还有个50人的研发团队。
+                  - paragraph [ref=e1221]
+                  - paragraph [ref=e1222]: 【这家德国公司专门收购老游戏】
+                  - paragraph [ref=e1223]
+                  - paragraph [ref=e1224]: 2016年，前Kabam高管Ken Go在柏林创立Deca Games：大厂为了新游会放弃老游戏，但老游戏还有忠实用户——买下来，配专业运营团队持续养着，就是一门稳定生意。
+                  - paragraph [ref=e1225]
+                  - paragraph [ref=e1226]: 2020年Deca被瑞典游戏巨头Embracer收购；2021年又收购了北京聚锋工作室：50人团队，8款海外手游，15万日活，99%以上收入来自国际市场。这些游戏国内没人知道，海外玩家还在老老实实充钱。
+                  - paragraph [ref=e1227]
+                  - paragraph [ref=e1228]: 【你可能玩过的两款老手游】
+                  - paragraph [ref=e1229]
+                  - paragraph [ref=e1230]: 聚锋旗下最有代表性的两款：
+                  - paragraph [ref=e1231]
+                  - paragraph [ref=e1232]: 《精灵对抗矮人》（EVD）——前身是2012年Kabam与华纳联合做的《霍比特人》手游，IP到期后换壳保留玩法，改名活到今天，2026年还在出新内容。
+                  - paragraph [ref=e1233]
+                  - paragraph [ref=e1234]: 《卡米洛特王国：北征》（KBN）——2012年曾是iPhone全年最高收入游戏，50多个国家霸榜。几经转手落到Deca手里，2026年1月刚过完14周年纪念，还出了限定皮肤。
+                  - paragraph [ref=e1235]
+                  - paragraph [ref=e1236]: 两款都超过10年历史，2024-2026年仍在密集更新：新建筑、新皮肤、新坐骑、Battle Pass……
+                  - paragraph [ref=e1237]
+                  - paragraph [ref=e1238]: 【他们的运营秘诀】
+                  - paragraph [ref=e1239]
+                  - paragraph [ref=e1240]: 三个核心动作：
+                  - paragraph [ref=e1241]
+                  - paragraph [ref=e1242]: ① 养成天花板持续上移 — 英雄升星、坐骑升星、城市建筑层层加码。只要天花板还在，重度玩家就有东西可追，付费周期就不会断。
+                  - paragraph [ref=e1243]
+                  - paragraph [ref=e1244]: ② 皮肤付费和强度付费双轨并行 — 外观给轻氪玩家，数值给重氪玩家，两头都不放过。
+                  - paragraph [ref=e1245]
+                  - paragraph [ref=e1246]: ③ 变现机制跟着全球合规走 — 转盘加保底、引入Battle Pass，适配监管趋势，减少被下架风险。
+                  - paragraph [ref=e1247]
+                  - paragraph [ref=e1248]: 核心逻辑：不靠新用户，靠老用户的持续忠诚。
+                  - paragraph [ref=e1249]
+                  - paragraph [ref=e1250]: 你有没有"以为早死了结果还在更新"的手游经历？
+                  - paragraph [ref=e1251]
+                  - paragraph [ref=e1252]: 国内哪款老手游最值得被这样救活？评论区聊聊 👀
+                  - paragraph [ref=e1253]:
+                    - generic [ref=e1254] [cursor=pointer]: "#游戏运营"
+                    - text: "#商业故事"
+                - generic [ref=e968]:
+                  - generic [ref=e969]: 编辑于
+                  - generic [ref=e970]: 刚刚
+                - img "头像" [ref=e972]
+  - 'tooltip "#商业故事 8584.0万人浏览 #商业故事精选 239人浏览 #商业故事影响力 4人浏览 #商业故事说 4422人浏览 #商业故事跳 2265人浏览 #商业故事口播 4人浏览 #商业故事脚本模板 34人浏览 #商业故事投资的智慧理财股票 662人浏览 #经区小城故事商业街北头卖肉蛋堡 47人浏览 #商业景观故事线 3435人浏览 #励志商业故事 308人浏览 #用设计改写商业故事 37人浏览 #商业与空间设计的故事 93人浏览 #金老板说商业故事 1496人浏览 #反直觉商业故事 0人浏览 #星沙商业变迁故事 105人浏览 #阿金谈商业故事 1496人浏览 #三亚海棠故事商业街区 4114人浏览 #100个中国商业故事 0人浏览 #小众故事的商业价值 13人浏览 #商业文案创业故事 5人浏览 #阿金商业故事 4677人浏览 #本土商业故事 27人浏览 #经区小城故事商业街北头 59人浏览 #泰国商业故事 4人浏览 #商业演讲中的故事策略 10人浏览 #印尼商业故事 1410人浏览 #每天一个商业故事 3470人浏览" [ref=e1256]':
+    - generic [ref=e1259]:
+      - generic [ref=e1260] [cursor=pointer]:
+        - generic [ref=e1261]: "#商业故事"
+        - generic [ref=e1262]: 8584.0万人浏览
+      - generic [ref=e1263] [cursor=pointer]:
+        - generic [ref=e1264]: "#商业故事精选"
+        - generic [ref=e1265]: 239人浏览
+      - generic [ref=e1266] [cursor=pointer]:
+        - generic [ref=e1267]: "#商业故事影响力"
+        - generic [ref=e1268]: 4人浏览
+      - generic [ref=e1269] [cursor=pointer]:
+        - generic [ref=e1270]: "#商业故事说"
+        - generic [ref=e1271]: 4422人浏览
+      - generic [ref=e1272] [cursor=pointer]:
+        - generic [ref=e1273]: "#商业故事跳"
+        - generic [ref=e1274]: 2265人浏览
+      - generic [ref=e1275] [cursor=pointer]:
+        - generic [ref=e1276]: "#商业故事口播"
+        - generic [ref=e1277]: 4人浏览
+      - generic [ref=e1278] [cursor=pointer]:
+        - generic [ref=e1279]: "#商业故事脚本模板"
+        - generic [ref=e1280]: 34人浏览
+      - generic [ref=e1281] [cursor=pointer]:
+        - generic [ref=e1282]: "#商业故事投资的智慧理财股票"
+        - generic [ref=e1283]: 662人浏览
+      - generic [ref=e1284] [cursor=pointer]:
+        - generic [ref=e1285]: "#经区小城故事商业街北头卖肉蛋堡"
+        - generic [ref=e1286]: 47人浏览
+      - generic [ref=e1287] [cursor=pointer]:
+        - generic [ref=e1288]: "#商业景观故事线"
+        - generic [ref=e1289]: 3435人浏览
+      - generic [ref=e1290] [cursor=pointer]:
+        - generic [ref=e1291]: "#励志商业故事"
+        - generic [ref=e1292]: 308人浏览
+      - generic [ref=e1293] [cursor=pointer]:
+        - generic [ref=e1294]: "#用设计改写商业故事"
+        - generic [ref=e1295]: 37人浏览
+      - generic [ref=e1296] [cursor=pointer]:
+        - generic [ref=e1297]: "#商业与空间设计的故事"
+        - generic [ref=e1298]: 93人浏览
+      - generic [ref=e1299] [cursor=pointer]:
+        - generic [ref=e1300]: "#金老板说商业故事"
+        - generic [ref=e1301]: 1496人浏览
+      - generic [ref=e1302] [cursor=pointer]:
+        - generic [ref=e1303]: "#反直觉商业故事"
+        - generic [ref=e1304]: 0人浏览
+      - generic [ref=e1305] [cursor=pointer]:
+        - generic [ref=e1306]: "#星沙商业变迁故事"
+        - generic [ref=e1307]: 105人浏览
+      - generic [ref=e1308] [cursor=pointer]:
+        - generic [ref=e1309]: "#阿金谈商业故事"
+        - generic [ref=e1310]: 1496人浏览
+      - generic [ref=e1311] [cursor=pointer]:
+        - generic [ref=e1312]: "#三亚海棠故事商业街区"
+        - generic [ref=e1313]: 4114人浏览
+      - generic [ref=e1314] [cursor=pointer]:
+        - generic [ref=e1315]: "#100个中国商业故事"
+        - generic [ref=e1316]: 0人浏览
+      - generic [ref=e1317] [cursor=pointer]:
+        - generic [ref=e1318]: "#小众故事的商业价值"
+        - generic [ref=e1319]: 13人浏览
+      - generic [ref=e1320] [cursor=pointer]:
+        - generic [ref=e1321]: "#商业文案创业故事"
+        - generic [ref=e1322]: 5人浏览
+      - generic [ref=e1323] [cursor=pointer]:
+        - generic [ref=e1324]: "#阿金商业故事"
+        - generic [ref=e1325]: 4677人浏览
+      - generic [ref=e1326] [cursor=pointer]:
+        - generic [ref=e1327]: "#本土商业故事"
+        - generic [ref=e1328]: 27人浏览
+      - generic [ref=e1329] [cursor=pointer]:
+        - generic [ref=e1330]: "#经区小城故事商业街北头"
+        - generic [ref=e1331]: 59人浏览
+      - generic [ref=e1332] [cursor=pointer]:
+        - generic [ref=e1333]: "#泰国商业故事"
+        - generic [ref=e1334]: 4人浏览
+      - generic [ref=e1335] [cursor=pointer]:
+        - generic [ref=e1336]: "#商业演讲中的故事策略"
+        - generic [ref=e1337]: 10人浏览
+      - generic [ref=e1338] [cursor=pointer]:
+        - generic [ref=e1339]: "#印尼商业故事"
+        - generic [ref=e1340]: 1410人浏览
+      - generic [ref=e1341] [cursor=pointer]:
+        - generic [ref=e1342]: "#每天一个商业故事"
+        - generic [ref=e1343]: 3470人浏览

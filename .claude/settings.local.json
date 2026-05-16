@@ -37,7 +37,9 @@
       "mcp__playwright__browser_file_upload",
       "mcp__playwright__browser_type",
       "mcp__playwright__browser_press_key",
-      "mcp__playwright__browser_network_requests"
+      "mcp__playwright__browser_network_requests",
+      "Bash(start \"\" \"chrome\" --incognito \"https://creator.xiaohongshu.com/\")",
+      "Bash(start \"\" \"C:/Program Files/Google/Chrome/Application/chrome.exe\" --incognito \"https://creator.xiaohongshu.com/\")"
     ]
   }
 }

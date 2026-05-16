@@ -1,0 +1,228 @@
+- generic [ref=e3]:
+  - generic [ref=e6] [cursor=pointer]: 遇到问题
+  - generic [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - img [ref=e13]
+        - generic [ref=e16]: 创作服务平台
+      - generic [ref=e18] [cursor=pointer]:
+        - img [ref=e19]
+        - generic [ref=e20]: Jmno
+        - img [ref=e21]
+    - main [ref=e23]:
+      - generic [ref=e25]:
+        - generic [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+          - generic [ref=e32]: 发布笔记
+          - img [ref=e33]
+        - generic [ref=e35] [cursor=pointer]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - img [ref=e40]
+              - generic [ref=e43]: 首页
+            - generic [ref=e44]:
+              - img [ref=e47]
+              - generic [ref=e50]: 笔记管理
+            - generic [ref=e52]:
+              - img [ref=e55]
+              - generic [ref=e57]: 数据看板
+              - img [ref=e60]
+            - generic [ref=e62]:
+              - img [ref=e65]
+              - generic [ref=e68]: 活动中心
+            - generic [ref=e69]:
+              - img [ref=e72]
+              - generic [ref=e75]: 笔记灵感
+            - generic [ref=e76]:
+              - img [ref=e79]
+              - generic [ref=e82]: 创作学院
+            - generic [ref=e83]:
+              - img [ref=e86]
+              - generic [ref=e89]: 创作百科
+          - generic [ref=e90]:
+            - img [ref=e92]
+            - generic [ref=e94]: 收起侧边栏
+      - generic [ref=e600]:
+        - generic [ref=e601]:
+          - generic [ref=e604]:
+            - generic [ref=e605]:
+              - generic [ref=e606]:
+                - generic [ref=e607]: 图片编辑
+                - generic [ref=e608]: 6/18
+                - img [ref=e610] [cursor=pointer]
+              - generic [ref=e612] [cursor=pointer]:
+                - img [ref=e613]
+                - generic [ref=e616]: 获取封面建议
+            - generic [ref=e619]:
+              - img [ref=e621] [cursor=pointer]
+              - generic [ref=e626]: "1"
+              - generic [ref=e631]: "2"
+              - generic [ref=e636]: "3"
+              - generic [ref=e641]: "4"
+              - generic [ref=e646]: "5"
+              - generic [ref=e651]: "6"
+          - generic [ref=e654]:
+            - generic [ref=e655]:
+              - generic [ref=e656]:
+                - textbox "填写标题会有更多赞哦" [active] [ref=e659]
+                - generic:
+                  - generic: 0 / 20
+              - generic [ref=e660] [cursor=pointer]:
+                - img [ref=e661]
+                - generic [ref=e662]: 智能标题
+                - img [ref=e663]
+            - generic [ref=e665]:
+              - textbox [ref=e668]:
+                - paragraph [ref=e669]: 输入正文描述，真诚有价值的分享予人温暖
+              - generic [ref=e672]:
+                - generic [ref=e971] [cursor=pointer]: "#我在小红书做游戏"
+                - generic [ref=e972] [cursor=pointer]: "#游戏IF剧场"
+                - generic [ref=e973] [cursor=pointer]: "#榨干设备howto"
+                - generic [ref=e974] [cursor=pointer]: "#vibecoding大赏"
+                - generic [ref=e975] [cursor=pointer]: "#用户体验设计"
+                - generic [ref=e976] [cursor=pointer]:
+                  - text: 更多
+                  - img [ref=e977]
+            - generic [ref=e673]:
+              - generic [ref=e674]:
+                - generic [ref=e676]:
+                  - button "话题" [ref=e677] [cursor=pointer]:
+                    - img [ref=e678]
+                    - text: 话题
+                  - button [ref=e680] [cursor=pointer]:
+                    - img [ref=e681]
+                - button "用户" [ref=e684] [cursor=pointer]:
+                  - img [ref=e685]
+                  - text: 用户
+                - button "表情" [ref=e688] [cursor=pointer]:
+                  - img [ref=e689]
+                  - text: 表情
+              - generic [ref=e694]:
+                - text: "0"
+                - generic [ref=e695]: /1000
+          - generic [ref=e697]:
+            - generic [ref=e698]:
+              - generic [ref=e699]: 活动话题
+              - generic [ref=e700] [cursor=pointer]:
+                - text: 更多
+                - img [ref=e701]
+            - generic [ref=e704]:
+              - generic [ref=e705] [cursor=pointer]:
+                - img [ref=e707]
+                - generic [ref=e708]:
+                  - generic [ref=e709]:
+                    - img [ref=e710]
+                    - generic [ref=e711]: 光遇
+                  - generic [ref=e712]:
+                    - generic [ref=e713]:
+                      - img [ref=e714]
+                      - text: 添加话题
+                    - generic [ref=e715]:
+                      - text: 活动详情
+                      - img [ref=e716]
+              - generic [ref=e717] [cursor=pointer]:
+                - img [ref=e719]
+                - generic [ref=e720]:
+                  - generic [ref=e721]:
+                    - img [ref=e722]
+                    - generic [ref=e723]: 世界之外
+                  - generic [ref=e724]:
+                    - generic [ref=e725]:
+                      - img [ref=e726]
+                      - text: 添加话题
+                    - generic [ref=e727]:
+                      - text: 活动详情
+                      - img [ref=e728]
+          - generic [ref=e729]:
+            - generic [ref=e730]:
+              - generic [ref=e731]: 内容设置
+              - generic [ref=e732] [cursor=pointer]:
+                - generic [ref=e733]: 收起
+                - img [ref=e734]
+            - generic [ref=e736]:
+              - generic [ref=e737] [cursor=pointer]:
+                - img [ref=e739]
+                - generic [ref=e741]:
+                  - generic [ref=e742]: 加入合集
+                  - generic [ref=e743]: 汇集系列视频，有利于连续性观看
+                - generic [ref=e744]:
+                  - img [ref=e745]
+                  - text: 创建合集
+              - generic [ref=e751]:
+                - img [ref=e753]
+                - generic [ref=e756]: 原创声明
+                - generic [ref=e761] [cursor=pointer]:
+                  - checkbox
+              - generic [ref=e766]:
+                - img [ref=e768]
+                - generic [ref=e773]: 添加内容类型声明
+                - img [ref=e776]
+            - generic [ref=e779]: 添加组件
+            - generic [ref=e780]:
+              - generic [ref=e785] [cursor=pointer]:
+                - img [ref=e787]
+                - generic [ref=e789]:
+                  - textbox [ref=e790]
+                  - generic [ref=e791]: 添加地点
+                - img [ref=e794]
+              - generic [ref=e800] [cursor=pointer]:
+                - img [ref=e802]
+                - generic [ref=e806]:
+                  - textbox [ref=e807]
+                  - generic [ref=e808]: 选择群聊
+                - img [ref=e811]
+              - generic [ref=e815] [cursor=pointer]:
+                - generic [ref=e816]:
+                  - img [ref=e818]
+                  - generic [ref=e821]: 标记地点或标记朋友
+                - img [ref=e823]
+              - generic [ref=e827] [cursor=pointer]:
+                - generic [ref=e828]:
+                  - img [ref=e830]
+                  - generic [ref=e832]: 添加路线
+                - img [ref=e834]
+              - generic [ref=e838] [cursor=pointer]:
+                - generic [ref=e839]:
+                  - img [ref=e841]
+                  - generic [ref=e843]: 选择文件
+                - img [ref=e845]
+          - generic [ref=e847]:
+            - generic [ref=e848]:
+              - generic [ref=e849]: 更多设置
+              - generic [ref=e850] [cursor=pointer]:
+                - generic [ref=e851]: 收起
+                - img [ref=e852]
+            - generic [ref=e854]:
+              - generic [ref=e857]:
+                - img [ref=e859]
+                - generic [ref=e861]: 允许合拍
+                - generic [ref=e866] [cursor=pointer]:
+                  - checkbox [checked]
+              - generic [ref=e870]:
+                - img [ref=e872]
+                - generic [ref=e874]: 允许正文复制
+                - generic [ref=e879] [cursor=pointer]:
+                  - checkbox [checked]
+              - generic [ref=e885]:
+                - img [ref=e887]
+                - generic [ref=e890]: 公开可见
+                - img [ref=e893]
+              - generic [ref=e898]:
+                - img [ref=e900]
+                - generic [ref=e903]: 定时发布
+                - generic [ref=e908] [cursor=pointer]:
+                  - checkbox
+        - generic [ref=e912]:
+          - generic [ref=e914]:
+            - generic [ref=e915] [cursor=pointer]: 笔记预览
+            - generic [ref=e916] [cursor=pointer]: 封面预览
+          - generic [ref=e919]:
+            - generic [ref=e921]:
+              - img "头像" [ref=e922]
+              - generic [ref=e923]: Jmno
+            - generic [ref=e925]:
+              - generic [ref=e960]: 1/6
+              - generic [ref=e964]:
+                - generic [ref=e965]: 编辑于
+                - generic [ref=e966]: 刚刚
+              - img "头像" [ref=e968]
