@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1920px; height:1080px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:48px 80px; }
+.title-area { text-align:center; margin-bottom:52px; }
+.section-tag { font-size:18px; color:#FF6B35; letter-spacing:4px; margin-bottom:12px; }
+h2 { font-size:50px; font-weight:800; color:#fff; }
+h2 span { color:#FF6B35; }
+.timeline { display:flex; width:100%; gap:0; position:relative; }
+.timeline::before { content:''; position:absolute; top:68px; left:40px; right:40px; height:3px; background:linear-gradient(90deg,rgba(255,107,53,.3),#FF6B35,rgba(255,107,53,.3)); }
+.phase { flex:1; display:flex; flex-direction:column; align-items:center; padding:0 16px; position:relative; z-index:1; }
+.dot { width:20px; height:20px; border-radius:50%; background:#FF6B35; box-shadow:0 0 16px rgba(255,107,53,.6); margin-bottom:24px; flex-shrink:0; }
+.phase-box { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.2); border-radius:12px; padding:28px 24px; width:100%; }
+.phase-num { font-size:13px; color:#FF6B35; letter-spacing:3px; margin-bottom:8px; }
+.phase-name { font-size:22px; font-weight:700; color:#fff; margin-bottom:8px; line-height:1.3; }
+.phase-time { font-size:17px; color:#FF6B35; margin-bottom:10px; font-weight:600; }
+.phase-op { font-size:15px; color:rgba(255,255,255,.35); margin-bottom:12px; }
+.phase-key { font-size:16px; color:rgba(255,255,255,.6); line-height:1.7; }
+.milestone { margin-top:8px; display:flex; align-items:flex-start; gap:6px; }
+.milestone::before { content:'▸'; color:#FF6B35; font-size:14px; flex-shrink:0; margin-top:1px; }
+.highlight { color:#FF6B35; font-weight:600; }
+.watermark { position:absolute; bottom:28px; right:44px; font-size:16px; color:rgba(255,255,255,.15); }
+</style></head><body>
+<div class="title-area">
+  <div class="section-tag">第三部分 · EVD 策略演变</div>
+  <h2><span>Elves vs Dwarves</span> — 四阶段长青化演变时间线</h2>
+</div>
+<div class="timeline">
+  <div class="phase">
+    <div class="dot"></div>
+    <div class="phase-box">
+      <div class="phase-num">PHASE 0</div>
+      <div class="phase-name">IP 重建期</div>
+      <div class="phase-time">2016–2021</div>
+      <div class="phase-op">运营方：Gaea / 聚风</div>
+      <div class="milestone"><span>脱 Hobbit IP 授权，更名 EVD</span></div>
+      <div class="milestone"><span>保留玩家账号/道具/进度</span></div>
+      <div class="milestone"><span>App ID 沿用 com.kabam.evd</span></div>
+      <div class="milestone"><span>确立"内核不变，皮肤可替换"基调</span></div>
+    </div>
+  </div>
+  <div class="phase">
+    <div class="dot"></div>
+    <div class="phase-box">
+      <div class="phase-num">PHASE 1</div>
+      <div class="phase-name">接管稳定期</div>
+      <div class="phase-time">Oct 2021–2023</div>
+      <div class="phase-op">运营方：Deca / 聚风</div>
+      <div class="milestone"><span>账号数据零损失无缝交接</span></div>
+      <div class="milestone"><span>版本维持 v16.x，更新节奏稳定</span></div>
+      <div class="milestone"><span>季节性城堡/行军皮肤持续扩池</span></div>
+      <div class="milestone"><span>英雄技能体系优化</span></div>
+    </div>
+  </div>
+  <div class="phase">
+    <div class="dot"></div>
+    <div class="phase-box">
+      <div class="phase-num">PHASE 2</div>
+      <div class="phase-name">结构扩张期</div>
+      <div class="phase-time">2024</div>
+      <div class="phase-op">运营方：Deca / 聚风</div>
+      <div class="milestone"><span><span class="highlight">新增第六城</span> + 神坛建筑</span></div>
+      <div class="milestone"><span>誓约军队（新兵种系统）</span></div>
+      <div class="milestone"><span>科技树扩展新分支节点</span></div>
+      <div class="milestone"><span><span class="highlight">英雄星级 5星→10星</span>（v16.9.0）</span></div>
+    </div>
+  </div>
+  <div class="phase">
+    <div class="dot"></div>
+    <div class="phase-box">
+      <div class="phase-num">PHASE 3</div>
+      <div class="phase-name">深度变现期</div>
+      <div class="phase-time">2025–2026</div>
+      <div class="phase-op">运营方：Deca / 聚风</div>
+      <div class="milestone"><span>6级英雄装备（付费纵深梯队）</span></div>
+      <div class="milestone"><span>聊天翻译（国际化）</span></div>
+      <div class="milestone"><span>坐骑晋升至9星</span></div>
+      <div class="milestone"><span><span class="highlight">Battle Pass 正式上线</span>（v17.0.4）</span></div>
+    </div>
+  </div>
+</div>
+<div class="watermark">DECA × 聚锋</div>
+</body></html>

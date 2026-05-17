@@ -39,7 +39,30 @@
       "mcp__playwright__browser_press_key",
       "mcp__playwright__browser_network_requests",
       "Bash(start \"\" \"chrome\" --incognito \"https://creator.xiaohongshu.com/\")",
-      "Bash(start \"\" \"C:/Program Files/Google/Chrome/Application/chrome.exe\" --incognito \"https://creator.xiaohongshu.com/\")"
+      "Bash(start \"\" \"C:/Program Files/Google/Chrome/Application/chrome.exe\" --incognito \"https://creator.xiaohongshu.com/\")",
+      "Skill(company-game-research)",
+      "WebFetch(domain:kingdomsofcamelotmobile.fandom.com)",
+      "WebFetch(domain:twitter.com)",
+      "WebFetch(domain:kocbattle4thenorth.home.blog)",
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:grokipedia.com)",
+      "WebFetch(domain:www.ipa4fun.com)",
+      "WebFetch(domain:camelot.en.uptodown.com)",
+      "WebFetch(domain:www.facebook.com)",
+      "WebFetch(domain:gameworldobserver.com)",
+      "WebFetch(domain:iphone.apkpure.com)",
+      "Bash(New-Item *)",
+      "WebFetch(domain:www.gamedeveloper.com)",
+      "WebFetch(domain:www.gematsu.com)",
+      "WebFetch(domain:www.blog.udonis.co)",
+      "Skill(bilibili-publish)",
+      "Bash(python -m http.server 7654)",
+      "Bash(python -m http.server 8765)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/img1_cover.html)",
+      "Skill(xiaohongshu-publish)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/)",
+      "Bash(python -m http.server 8766)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8766/xhs_cover.html)"
     ]
   }
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1242px; height:1242px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:48px 56px; }
+.section-tag { font-size:20px; color:#FF6B35; letter-spacing:4px; margin-bottom:16px; text-align:center; }
+h2 { font-size:48px; font-weight:800; color:#fff; text-align:center; margin-bottom:40px; }
+h2 span { color:#FF6B35; }
+.timeline { display:flex; flex-direction:column; gap:18px; width:100%; }
+.phase-row { display:grid; grid-template-columns:160px 1fr; gap:20px; align-items:start; }
+.time-col { text-align:right; }
+.time-label { font-size:13px; color:#FF6B35; letter-spacing:2px; }
+.time-range { font-size:18px; font-weight:700; color:#FF6B35; margin:2px 0; }
+.time-op { font-size:13px; color:rgba(255,255,255,.3); }
+.connector { display:flex; align-items:flex-start; gap:14px; }
+.dot-line { display:flex; flex-direction:column; align-items:center; }
+.dot { width:14px; height:14px; border-radius:50%; background:#FF6B35; flex-shrink:0; margin-top:4px; }
+.line { width:2px; flex:1; background:rgba(255,107,53,.25); margin-top:4px; min-height:40px; }
+.phase-content { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.15); border-radius:10px; padding:16px 20px; flex:1; }
+.phase-title { font-size:20px; font-weight:700; color:#fff; margin-bottom:6px; }
+.phase-desc { font-size:16px; color:rgba(255,255,255,.55); line-height:1.5; }
+.highlight { color:#FF6B35; font-weight:600; }
+.bottom-stat { margin-top:24px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+.stat { text-align:center; background:rgba(255,107,53,.08); border:1px solid rgba(255,107,53,.2); border-radius:8px; padding:14px; }
+.stat-n { font-size:36px; font-weight:900; color:#FF6B35; }
+.stat-l { font-size:15px; color:rgba(255,255,255,.45); }
+.watermark { position:absolute; bottom:24px; right:36px; font-size:15px; color:rgba(255,255,255,.15); }
+</style></head><body>
+<div class="section-tag">KBN 策略演变</div>
+<h2>卡米洛特王国 <span>14年</span> 运营历程</h2>
+<div class="timeline">
+  <div class="phase-row">
+    <div class="time-col"><div class="time-label">PHASE 0</div><div class="time-range">2012–2016</div><div class="time-op">Kabam</div></div>
+    <div class="connector"><div class="dot-line"><div class="dot"></div><div class="line"></div></div><div class="phase-content"><div class="phase-title">🏆 峰值时代</div><div class="phase-desc">App Store年度最高营收 · <span class="highlight">950万玩家</span> · 68国登顶</div></div></div>
+  </div>
+  <div class="phase-row">
+    <div class="time-col"><div class="time-label">PHASE 1-2</div><div class="time-range">2016–2022</div><div class="time-op">Gaea→Deca</div></div>
+    <div class="connector"><div class="dot-line"><div class="dot"></div><div class="line"></div></div><div class="phase-content"><div class="phase-title">🔄 交接维稳</div><div class="phase-desc">Gaea接手 → Deca接管，低成本季度更新，保留核心玩家</div></div></div>
+  </div>
+  <div class="phase-row">
+    <div class="time-col"><div class="time-label">PHASE 3</div><div class="time-range">2023</div><div class="time-op">Deca/聚风</div></div>
+    <div class="connector"><div class="dot-line"><div class="dot"></div><div class="line"></div></div><div class="phase-content"><div class="phase-title">⚡ 节奏提速</div><div class="phase-desc"><span class="highlight">v22.1.0大版本升级</span>，从季度更新提速至双月更新</div></div></div>
+  </div>
+  <div class="phase-row">
+    <div class="time-col"><div class="time-label">PHASE 4</div><div class="time-range">2024</div><div class="time-op">Deca/聚风</div></div>
+    <div class="connector"><div class="dot-line"><div class="dot"></div><div class="line"></div></div><div class="phase-content"><div class="phase-title">💰 变现深化</div><div class="phase-desc"><span class="highlight">英雄皮肤系统</span>+装备进化+宝箱活动+消费返利</div></div></div>
+  </div>
+  <div class="phase-row">
+    <div class="time-col"><div class="time-label">PHASE 5</div><div class="time-range">2025–2026</div><div class="time-op">Deca/聚风</div></div>
+    <div class="connector"><div class="dot-line"><div class="dot" style="background:rgba(255,107,53,.5);"></div></div><div class="phase-content"><div class="phase-title">🎂 系统重构</div><div class="phase-desc">特殊卡牌·City Halo·<span class="highlight">第14周年纪念皮肤</span></div></div></div>
+  </div>
+</div>
+<div class="bottom-stat">
+  <div class="stat"><div class="stat-n">14年</div><div class="stat-l">持续运营</div></div>
+  <div class="stat"><div class="stat-n">v22.9</div><div class="stat-l">2026年最新版本</div></div>
+  <div class="stat"><div class="stat-n">从不</div><div class="stat-l">停止更新</div></div>
+</div>
+<div class="watermark">DECA × 聚锋</div>
+</body></html>
