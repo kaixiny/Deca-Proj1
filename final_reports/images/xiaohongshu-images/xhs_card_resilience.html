@@ -1,45 +1,218 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { width:1242px; height:1242px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:56px 60px; }
-.section-tag { font-size:20px; color:#FF6B35; letter-spacing:4px; margin-bottom:18px; text-align:center; }
-h2 { font-size:52px; font-weight:800; color:#fff; text-align:center; margin-bottom:48px; }
-h2 span { color:#FF6B35; }
-.crisis-box { background:rgba(255,50,50,.08); border:1px solid rgba(255,80,80,.3); border-radius:14px; padding:32px 36px; margin-bottom:36px; width:100%; }
-.crisis-title { font-size:22px; color:rgba(255,100,100,.9); font-weight:700; margin-bottom:20px; }
-.crisis-stats { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; }
-.crisis-stat { text-align:center; }
-.crisis-num { font-size:48px; font-weight:900; color:#ff6060; line-height:1; }
-.crisis-label { font-size:16px; color:rgba(255,255,255,.4); margin-top:6px; }
-.resilience-box { background:rgba(255,107,53,.08); border:1px solid rgba(255,107,53,.3); border-radius:14px; padding:32px 36px; width:100%; }
-.resilience-title { font-size:22px; color:#FF6B35; font-weight:700; margin-bottom:20px; }
-.resilience-item { display:flex; align-items:flex-start; gap:14px; margin-bottom:18px; }
-.r-icon { font-size:28px; flex-shrink:0; }
-.r-text { font-size:20px; color:rgba(255,255,255,.75); line-height:1.5; }
-.r-text em { color:#FF6B35; font-style:normal; font-weight:700; }
-.conclusion { margin-top:32px; background:linear-gradient(135deg,rgba(255,107,53,.15),rgba(255,107,53,.05)); border:1px solid rgba(255,107,53,.3); border-radius:10px; padding:20px 28px; text-align:center; font-size:22px; color:#fff; line-height:1.6; }
-.conclusion em { color:#FF6B35; font-style:normal; font-weight:700; }
-.watermark { position:absolute; bottom:24px; right:40px; font-size:15px; color:rgba(255,255,255,.15); }
-</style></head><body>
-<div class="section-tag">运营韧性</div>
-<h2>大裁员下<span>照常更新</span>的秘密</h2>
-<div class="crisis-box">
-  <div class="crisis-title">⚠️ Embracer 2023年大规模重组</div>
-  <div class="crisis-stats">
-    <div class="crisis-stat"><div class="crisis-num">7,800</div><div class="crisis-label">裁员人数</div></div>
-    <div class="crisis-stat"><div class="crisis-num">44</div><div class="crisis-label">关闭工作室</div></div>
-    <div class="crisis-stat"><div class="crisis-num">80</div><div class="crisis-label">取消项目</div></div>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1242px; height: 1242px;
+    background: #0D0D0D;
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    padding: 64px 72px;
+    gap: 40px;
+    overflow: hidden;
+  }
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .section-title {
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  .section-sub {
+    color: #888;
+    font-size: 24px;
+    margin-top: 6px;
+  }
+  .tag {
+    background: #1A1A1A;
+    border: 2px solid #FF6B35;
+    color: #FF6B35;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  .stat-card {
+    background: #1A1A1A;
+    border-radius: 12px;
+    padding: 28px 24px;
+    border-top: 3px solid #FF6B35;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .stat-num {
+    color: #FF6B35;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .stat-label {
+    color: #888;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .stat-source {
+    color: #555;
+    font-size: 18px;
+    margin-top: 4px;
+  }
+  .crisis-section {
+    background: #1A1A1A;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .crisis-title {
+    color: #FF6B35;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .crisis-badge {
+    background: rgba(255, 68, 68, 0.2);
+    border: 1px solid rgba(255,68,68,0.4);
+    color: #FF4444;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 4px;
+  }
+  .crisis-items {
+    display: flex; gap: 32px;
+  }
+  .crisis-item {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .crisis-num {
+    color: #FF4444;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .crisis-label {
+    color: #CCCCCC;
+    font-size: 22px;
+  }
+  .divider { width: 1px; background: #2A2A2A; align-self: stretch; }
+  .outcome {
+    background: rgba(255,107,53,0.08);
+    border: 1px solid rgba(255,107,53,0.2);
+    border-radius: 8px;
+    padding: 16px 20px;
+    color: #CCCCCC;
+    font-size: 24px;
+    line-height: 1.6;
+  }
+  .outcome strong { color: #FF6B35; }
+  .philosophy-box {
+    background: #111;
+    border-left: 4px solid #FF6B35;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    font-size: 26px;
+    color: #CCCCCC;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .philosophy-box .author {
+    color: #888;
+    font-size: 22px;
+    margin-top: 10px;
+    font-style: normal;
+  }
+  .bottom-row {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .source { color: #444; font-size: 20px; }
+  .watermark { color: #444; font-size: 20px; font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="section-title">关键数据 &amp; Embracer 重组的影响</div>
+      <div class="section-sub">危机下的韧性：盈利性资产如何保全？</div>
+    </div>
+    <div class="tag">数据总结</div>
   </div>
-</div>
-<div class="resilience-box">
-  <div class="resilience-title">✅ EVD & KBN 的表现</div>
-  <div class="resilience-item"><span class="r-icon">📅</span><div class="r-text">整个重组期间（2023–2024），两款游戏<em>版本更新从未中断</em></div></div>
-  <div class="resilience-item"><span class="r-icon">🚀</span><div class="r-text">EVD在2024年完成<em>最大规模系统扩张</em>（第六城+英雄10星）</div></div>
-  <div class="resilience-item"><span class="r-icon">💡</span><div class="r-text">KBN同期引入<em>英雄皮肤+装备进化</em>等新付费体系</div></div>
-</div>
-<div class="conclusion">
-  手游Live Ops = <em>低资本 + 稳现金流</em><br>即使集团崩了，长尾游戏照样能活
-</div>
-<div class="watermark">DECA × 聚锋</div>
-</body></html>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-num">€156M</div>
+      <div class="stat-label">Deca 2022 年营收</div>
+      <div class="stat-source">Wikipedia / HIGH</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">&gt;35%</div>
+      <div class="stat-label">预测利润率（2020 预测）</div>
+      <div class="stat-source">Embracer 收购公告 / HIGH</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">800K</div>
+      <div class="stat-label">月活玩家（MAU）2021-Q3</div>
+      <div class="stat-source">Embracer 新闻稿 / HIGH</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">150K</div>
+      <div class="stat-label">日活玩家（DAU）2021-Q3</div>
+      <div class="stat-source">Embracer 新闻稿 / HIGH</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">SEK<br>5000万</div>
+      <div class="stat-label">季度毛收入<br>（8 款游戏合计，2021）</div>
+      <div class="stat-source">Embracer 新闻稿 / HIGH</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">€25M+</div>
+      <div class="stat-label">Embracer 收购 Deca<br>预付款（2020）</div>
+      <div class="stat-source">Embracer 公告 / HIGH</div>
+    </div>
+  </div>
+
+  <div class="crisis-section">
+    <div class="crisis-title">
+      <span>⚡ 2023 Embracer 重组危机</span>
+      <span class="crisis-badge">外部冲击</span>
+    </div>
+    <div class="crisis-items">
+      <div class="crisis-item">
+        <div class="crisis-num">44</div>
+        <div class="crisis-label">关闭工作室数量</div>
+      </div>
+      <div class="divider"></div>
+      <div class="crisis-item">
+        <div class="crisis-num">4,532</div>
+        <div class="crisis-label">裁员人数</div>
+      </div>
+      <div class="divider"></div>
+      <div class="crisis-item">
+        <div class="crisis-num" style="color:#FF6B35">未受波及</div>
+        <div class="crisis-label">Deca / 飓风工作室<br>（盈利性 live ops 资产）</div>
+      </div>
+    </div>
+    <div class="outcome">
+      <strong>结论</strong>：Deca 的 live ops 模式产生稳定现金流，在 Embracer 大规模收缩时依然保持商业可行性。EVD、KBN 均未见具体裁撤报道。
+    </div>
+  </div>
+
+  <div class="philosophy-box">
+    "DECA believes games can last decades and built the company around that belief."
+    <div class="author">— Ken Go，Deca Games 创始人（前 Kabam 欧洲区总经理）</div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="source">数据来源：Embracer 官方公告 / Wikipedia（2026-05 研究时）</div>
+    <div class="watermark">DECA × 聚锋</div>
+  </div>
+</body>
+</html>

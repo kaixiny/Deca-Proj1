@@ -1,101 +1,130 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html>
+<head>
+<meta charset="UTF-8">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { width:1920px; height:1080px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:48px 80px; }
-.title-area { text-align:center; margin-bottom:48px; }
-.section-tag { font-size:18px; color:#FF6B35; letter-spacing:4px; margin-bottom:12px; }
-h2 { font-size:50px; font-weight:800; color:#fff; }
-.cols { display:grid; grid-template-columns:1fr 120px 1fr; gap:0; width:100%; }
-.col-box { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.2); border-radius:14px; padding:36px 36px; }
-.col-title { font-size:28px; font-weight:700; color:#FF6B35; margin-bottom:8px; }
-.col-sub { font-size:17px; color:rgba(255,255,255,.4); margin-bottom:28px; }
-.row { display:flex; align-items:flex-start; gap:12px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid rgba(255,255,255,.06); }
-.row:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
-.row-icon { width:36px; height:36px; border-radius:8px; background:rgba(255,107,53,.15); display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; color:#FF6B35; font-weight:700; }
-.row-content { flex:1; }
-.row-label { font-size:16px; color:rgba(255,255,255,.35); margin-bottom:4px; }
-.row-value { font-size:20px; color:#fff; line-height:1.4; }
-.row-value em { color:#FF6B35; font-style:normal; font-weight:600; }
-.vs-col { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; }
-.vs-badge { width:68px; height:68px; border-radius:50%; border:2px solid #FF6B35; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:800; color:#FF6B35; }
-.vs-line { flex:1; width:2px; background:linear-gradient(180deg,transparent,rgba(255,107,53,.4),transparent); }
-.watermark { position:absolute; bottom:28px; right:44px; font-size:16px; color:rgba(255,255,255,.15); }
-</style></head><body>
-<div class="title-area">
-  <div class="section-tag">第五部分 · 差异化策略</div>
-  <h2>EVD vs KBN — 两条不同的长青化路线</h2>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden;
+    background: #f5f5f5;
+    font-family: 'Inter', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  }
+  .container {
+    width: 100%; height: 100%;
+    display: grid; grid-template-rows: auto 1fr auto;
+    padding: 64px 100px; position: relative; gap: 40px;
+  }
+  .header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  .section-tag {
+    font-size: 13px; letter-spacing: 4px; color: #FF6B35;
+    text-transform: uppercase; font-weight: 600; margin-bottom: 10px;
+  }
+  .title {
+    font-size: 52px; font-weight: 800; color: #0a0a0a;
+  }
+  .title span { color: #FF6B35; }
+  .common-rules {
+    display: flex; gap: 32px;
+  }
+  .rule-chip {
+    background: #0a0a0a; color: #FF6B35; padding: 10px 20px;
+    font-size: 13px; font-weight: 600; letter-spacing: 1px;
+  }
+  .compare-table {
+    display: grid; grid-template-columns: 240px 1fr 1fr;
+    gap: 2px; background: #ddd;
+  }
+  .cell {
+    background: #fff; padding: 20px 28px;
+    display: flex; align-items: center;
+  }
+  .cell.header-row {
+    background: #0a0a0a; justify-content: center;
+  }
+  .cell.dim-label {
+    background: #f8f8f8;
+    font-size: 15px; color: #888; font-weight: 600;
+  }
+  .cell.evd { border-left: 4px solid #FF6B35; }
+  .cell.kbn { border-left: 4px solid #0a0a0a; }
+  .col-title {
+    font-size: 22px; font-weight: 800; color: #fff;
+  }
+  .col-title.orange { color: #FF6B35; }
+  .cell-text {
+    font-size: 15px; color: #333; line-height: 1.5;
+  }
+  .rating-big {
+    font-size: 32px; font-weight: 900;
+  }
+  .rating-big.low { color: #FF6B35; }
+  .rating-big.mid { color: #0a0a0a; }
+  .version-big {
+    font-size: 24px; font-weight: 900; color: #333; font-family: monospace;
+  }
+  .highlight-text {
+    color: #FF6B35; font-weight: 700;
+  }
+  .bottom-note {
+    font-size: 15px; color: #888; text-align: center;
+    padding: 0 80px;
+  }
+  .bottom-note strong { color: #0a0a0a; }
+  .watermark {
+    position: absolute; bottom: 24px; right: 48px;
+    font-size: 14px; color: #ccc;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div>
+      <div class="section-tag">横向对比 · Comparison</div>
+      <div class="title">EVD vs KBN：<span>同门不同路</span></div>
+    </div>
+    <div class="common-rules">
+      <div class="rule-chip">不关服 · 不弃玩家</div>
+      <div class="rule-chip">纵向进深策略</div>
+      <div class="rule-chip">全球西方市场</div>
+    </div>
+  </div>
+  <div class="compare-table">
+    <!-- Header Row -->
+    <div class="cell header-row"><span class="col-title" style="color:#888">维度</span></div>
+    <div class="cell header-row"><span class="col-title orange">EVD（精灵大战矮人）</span></div>
+    <div class="cell header-row"><span class="col-title">KBN（卡美洛王国）</span></div>
+    <!-- IP Risk -->
+    <div class="cell dim-label">IP 风险管理</div>
+    <div class="cell evd"><div class="cell-text"><span class="highlight-text">主动去 IP 化</span>（2017 年将霍比特人授权到期游戏重建为自有 IP《EVD》）</div></div>
+    <div class="cell kbn"><div class="cell-text">无 IP 授权风险，原创中世纪题材，可永久运营</div></div>
+    <!-- Monetization -->
+    <div class="cell dim-label">变现机制演化</div>
+    <div class="cell evd"><div class="cell-text">转盘保底（2024）→ <span class="highlight-text">Battle Pass 战令</span>（2026-03）</div></div>
+    <div class="cell kbn"><div class="cell-text">推荐礼包（2025）→ 特殊卡牌（2025）→ <span class="highlight-text">城市光环</span>（2026）</div></div>
+    <!-- Social -->
+    <div class="cell dim-label">社群工具</div>
+    <div class="cell evd"><div class="cell-text"><span class="highlight-text">聊天翻译</span>（2025）降低语言壁垒，强化国际化社区</div></div>
+    <div class="cell kbn"><div class="cell-text">Discord 官方社群 + 周年纪念活动情感锚点</div></div>
+    <!-- Rating & Version -->
+    <div class="cell dim-label">当前状态（2026）</div>
+    <div class="cell evd">
+      <div style="display:flex;gap:48px;align-items:center;">
+        <div><div class="rating-big low">2.2<span style="font-size:18px;color:#aaa">/5</span></div><div style="font-size:12px;color:#aaa">App Store 评分</div></div>
+        <div><div class="version-big">v17.0.7</div><div style="font-size:12px;color:#aaa">当前版本</div></div>
+      </div>
+    </div>
+    <div class="cell kbn">
+      <div style="display:flex;gap:48px;align-items:center;">
+        <div><div class="rating-big mid">3.1<span style="font-size:18px;color:#aaa">/5</span></div><div style="font-size:12px;color:#aaa">App Store 评分</div></div>
+        <div><div class="version-big">v22.9.0</div><div style="font-size:12px;color:#aaa">当前版本（首发更早）</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-note">两款游戏均遵循 Deca 核心运营原则：<strong>每次所有权更迭均承诺保留玩家数据</strong>，以低研发成本的纵向深化策略延长付费生命周期</div>
+  <div class="watermark">DECA × 聚锋</div>
 </div>
-<div class="cols">
-  <div class="col-box">
-    <div class="col-title">EVD — Elves vs Dwarves</div>
-    <div class="col-sub">精灵大战矮人 · 垂直成长路线</div>
-    <div class="row">
-      <div class="row-icon">↑</div>
-      <div class="row-content">
-        <div class="row-label">核心策略</div>
-        <div class="row-value"><em>深度系统扩张</em>：新城市、新建筑类型、新科技树分支</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-icon">★</div>
-      <div class="row-content">
-        <div class="row-label">成长扩展</div>
-        <div class="row-value">英雄星级 <em>5星 → 10星</em>，誓约军队新兵种</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-icon">$</div>
-      <div class="row-content">
-        <div class="row-label">变现里程碑</div>
-        <div class="row-value"><em>Battle Pass 订阅制</em>（v17.0.4，2026年3月）完成闭环</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-icon">🌐</div>
-      <div class="row-content">
-        <div class="row-label">国际化</div>
-        <div class="row-value"><em>聊天翻译功能</em>上线，覆盖更多语言区域玩家</div>
-      </div>
-    </div>
-  </div>
-  <div class="vs-col">
-    <div class="vs-line"></div>
-    <div class="vs-badge">VS</div>
-    <div class="vs-line"></div>
-  </div>
-  <div class="col-box">
-    <div class="col-title">KBN — Kingdoms of Camelot: BN</div>
-    <div class="col-sub">卡米洛特王国 · 横向体验叠加路线</div>
-    <div class="row">
-      <div class="row-icon">↔</div>
-      <div class="row-content">
-        <div class="row-label">核心策略</div>
-        <div class="row-value"><em>重横向体验叠加</em>：新收藏系统 + 活动经济多维扩张</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-icon">♦</div>
-      <div class="row-content">
-        <div class="row-label">新系统群</div>
-        <div class="row-value"><em>特殊卡牌</em>、城市光环、英雄皮肤、装备进化四系并行</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-icon">🎂</div>
-      <div class="row-content">
-        <div class="row-label">IP 资产利用</div>
-        <div class="row-value"><em>14年品牌积累</em>驱动周年纪念皮肤高频消费事件</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-icon">🎁</div>
-      <div class="row-content">
-        <div class="row-label">变现机制</div>
-        <div class="row-value">推荐礼包 + 高级宝箱 + <em>消费返利活动</em>系统化落地</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="watermark">DECA × 聚锋</div>
-</body></html>
+</body>
+</html>

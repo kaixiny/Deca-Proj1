@@ -1,52 +1,211 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { width:1242px; height:1242px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:60px; }
-.section-tag { font-size:22px; color:#FF6B35; letter-spacing:4px; margin-bottom:20px; text-align:center; }
-h2 { font-size:56px; font-weight:800; color:#fff; text-align:center; margin-bottom:60px; }
-h2 span { color:#FF6B35; }
-.cards { display:grid; grid-template-columns:1fr 1fr; gap:32px; width:100%; }
-.card { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.25); border-radius:16px; padding:40px 36px; position:relative; overflow:hidden; }
-.card::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,#FF6B35,#ff9a35); }
-.card-abbr { font-size:52px; font-weight:900; color:#FF6B35; margin-bottom:8px; }
-.card-fullname { font-size:20px; color:rgba(255,255,255,.4); margin-bottom:24px; line-height:1.4; }
-.card-name-cn { font-size:26px; font-weight:700; color:#fff; margin-bottom:24px; }
-.info-row { display:flex; align-items:flex-start; gap:10px; margin-bottom:12px; font-size:19px; color:rgba(255,255,255,.65); line-height:1.5; }
-.info-row .label { color:#FF6B35; font-weight:600; flex-shrink:0; }
-.bottom-box { margin-top:40px; background:rgba(255,107,53,.08); border:1px solid rgba(255,107,53,.2); border-radius:10px; padding:24px 28px; }
-.bottom-title { font-size:22px; color:#FF6B35; font-weight:700; margin-bottom:16px; }
-.bottom-item { font-size:19px; color:rgba(255,255,255,.65); margin-bottom:8px; display:flex; gap:8px; }
-.bottom-item::before { content:'▸'; color:#FF6B35; }
-.watermark { position:absolute; bottom:28px; right:40px; font-size:16px; color:rgba(255,255,255,.15); }
-</style></head><body>
-<div class="section-tag">第一部分 · 实体识别</div>
-<h2>EVD & KBN <span>是什么游戏</span>？</h2>
-<div class="cards">
-  <div class="card">
-    <div class="card-abbr">EVD</div>
-    <div class="card-fullname">Elves vs Dwarves</div>
-    <div class="card-name-cn">精灵大战矮人</div>
-    <div class="info-row"><span class="label">前身</span>霍比特人：中洲王国（华纳IP）</div>
-    <div class="info-row"><span class="label">转变</span>失去IP授权后更名，玩家数据全保留</div>
-    <div class="info-row"><span class="label">历程</span>Kabam → Gaea → 聚风/Deca</div>
-    <div class="info-row"><span class="label">包名</span>com.kabam.evd（代码库连续）</div>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1242px; height: 1242px;
+    background: #0D0D0D;
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    padding: 72px;
+    gap: 48px;
+    overflow: hidden;
+  }
+  .header {
+    display: flex; align-items: center; gap: 20px;
+  }
+  .num {
+    background: #FF6B35;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-title {
+    color: #FFFFFF;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .section-sub {
+    color: #888;
+    font-size: 26px;
+    margin-top: 8px;
+    font-weight: 400;
+  }
+  .cards-row {
+    display: flex; gap: 32px; flex: 1;
+  }
+  .card {
+    flex: 1;
+    background: #1A1A1A;
+    border-radius: 16px;
+    padding: 48px 40px;
+    display: flex; flex-direction: column; gap: 28px;
+    border-top: 4px solid #FF6B35;
+  }
+  .abbr {
+    font-size: 72px;
+    font-weight: 900;
+    color: #FF6B35;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+  .full-name {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .cn-name {
+    color: #FF6B35;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: -10px;
+  }
+  .confidence {
+    display: inline-block;
+    background: #FF6B35;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    align-self: flex-start;
+  }
+  .facts {
+    display: flex; flex-direction: column; gap: 16px;
+    margin-top: 8px;
+  }
+  .fact-row {
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .fact-dot {
+    width: 8px; height: 8px;
+    background: #FF6B35;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+  .fact-text {
+    color: #CCCCCC;
+    font-size: 26px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  .divider { width: 100%; height: 1px; background: #2A2A2A; }
+  .owner-chain {
+    background: #111;
+    border-radius: 10px;
+    padding: 20px 24px;
+  }
+  .chain-title {
+    color: #888;
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .chain-items {
+    display: flex; align-items: center; gap: 12px;
+    flex-wrap: wrap;
+  }
+  .chain-item {
+    color: #CCCCCC;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .chain-arrow { color: #FF6B35; font-size: 22px; }
+  .bottom-row {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .source { color: #444; font-size: 20px; }
+  .watermark { color: #444; font-size: 20px; font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="num">1</div>
+    <div>
+      <div class="section-title">这两款游戏到底是什么？</div>
+      <div class="section-sub">从缩写解码到所有权链完整梳理</div>
+    </div>
   </div>
-  <div class="card">
-    <div class="card-abbr">KBN</div>
-    <div class="card-fullname">Kingdoms of Camelot: Battle for the North</div>
-    <div class="card-name-cn">卡米洛特王国：征战北方</div>
-    <div class="info-row"><span class="label">上线</span>2012年3月，App Store年度最高营收</div>
-    <div class="info-row"><span class="label">峰值</span>950万+ 注册玩家，68国登顶</div>
-    <div class="info-row"><span class="label">历程</span>Kabam → Gaea → 聚风/Deca</div>
-    <div class="info-row"><span class="label">现状</span>2026年仍在运营（第14年）</div>
+
+  <div class="cards-row">
+    <div class="card">
+      <div class="abbr">EVD</div>
+      <div class="full-name">Elves vs Dwarves</div>
+      <div class="cn-name">精灵大战矮人</div>
+      <div class="confidence">HIGH 置信度</div>
+      <div class="facts">
+        <div class="fact-row">
+          <div class="fact-dot"></div>
+          <div class="fact-text">首字母规则：<strong>E</strong>·<strong>V</strong>·<strong>D</strong></div>
+        </div>
+        <div class="fact-row">
+          <div class="fact-dot"></div>
+          <div class="fact-text">包名 <code style="color:#FF6B35;font-size:22px">com.kabam.evd</code> 直接印证</div>
+        </div>
+        <div class="fact-row">
+          <div class="fact-dot"></div>
+          <div class="fact-text">前身：《霍比特人：中土王国》IP 授权到期后去 IP 化重塑</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="owner-chain">
+        <div class="chain-title">所有权链</div>
+        <div class="chain-items">
+          <span class="chain-item">Kabam</span>
+          <span class="chain-arrow">→</span>
+          <span class="chain-item">盖娅 / 飓风</span>
+          <span class="chain-arrow">→</span>
+          <span class="chain-item" style="color:#FF6B35">Deca</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="abbr">KBN</div>
+      <div class="full-name">Kingdoms of Camelot:<br>Battle for the North</div>
+      <div class="cn-name">卡美洛王国：北境之战</div>
+      <div class="confidence">HIGH 置信度</div>
+      <div class="facts">
+        <div class="fact-row">
+          <div class="fact-dot"></div>
+          <div class="fact-text">跳过连接词：<strong>K</strong>ingdoms <strong>B</strong>attle <strong>N</strong>orth</div>
+        </div>
+        <div class="fact-row">
+          <div class="fact-dot"></div>
+          <div class="fact-text">2012 年 iOS <strong>年度最高销售</strong>榜首</div>
+        </div>
+        <div class="fact-row">
+          <div class="fact-dot"></div>
+          <div class="fact-text">原创题材，无 IP 授权风险，可持续运营</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="owner-chain">
+        <div class="chain-title">所有权链</div>
+        <div class="chain-items">
+          <span class="chain-item">Kabam</span>
+          <span class="chain-arrow">→</span>
+          <span class="chain-item">盖娅 / 飓风</span>
+          <span class="chain-arrow">→</span>
+          <span class="chain-item" style="color:#FF6B35">Deca</span>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="bottom-box">
-  <div class="bottom-title">聚风工作室（Deca中国工作室）</div>
-  <div class="bottom-item">2015年成立，北京CBD，约50人团队</div>
-  <div class="bottom-item">2021年10月被Deca Games（Embracer旗下）收购</div>
-  <div class="bottom-item">专注面向西方市场的手游长青化运营</div>
-</div>
-<div class="watermark">DECA × 聚锋</div>
-</body></html>
+
+  <div class="bottom-row">
+    <div class="source">数据来源：Google Play / Apple App Store / Embracer 官方新闻稿</div>
+    <div class="watermark">DECA × 聚锋</div>
+  </div>
+</body>
+</html>

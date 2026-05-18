@@ -1,62 +1,181 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { width:1242px; height:1242px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:56px; }
-.section-tag { font-size:20px; color:#FF6B35; letter-spacing:4px; margin-bottom:18px; text-align:center; }
-h2 { font-size:52px; font-weight:800; color:#fff; text-align:center; margin-bottom:48px; }
-h2 span { color:#FF6B35; }
-.compare { display:grid; grid-template-columns:1fr 80px 1fr; gap:0; width:100%; margin-bottom:40px; }
-.col { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.2); border-radius:14px; padding:32px 28px; }
-.col-title { font-size:28px; font-weight:700; color:#FF6B35; margin-bottom:6px; }
-.col-sub { font-size:16px; color:rgba(255,255,255,.35); margin-bottom:24px; }
-.col-strategy { font-size:20px; font-weight:700; color:#fff; margin-bottom:20px; padding:12px 16px; background:rgba(255,107,53,.1); border-radius:8px; border-left:3px solid #FF6B35; }
-.col-item { font-size:18px; color:rgba(255,255,255,.65); line-height:1.6; display:flex; gap:8px; margin-bottom:10px; }
-.col-item::before { content:'▸'; color:#FF6B35; flex-shrink:0; }
-.vs-center { display:flex; align-items:center; justify-content:center; }
-.vs-badge { width:60px; height:60px; border-radius:50%; border:2px solid #FF6B35; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:800; color:#FF6B35; }
-.common-box { background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:24px 28px; width:100%; }
-.common-title { font-size:20px; color:rgba(255,255,255,.5); margin-bottom:16px; text-align:center; letter-spacing:2px; }
-.common-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
-.common-item { text-align:center; }
-.common-label { font-size:14px; color:rgba(255,255,255,.3); margin-bottom:6px; }
-.common-value { font-size:16px; color:rgba(255,255,255,.7); font-weight:600; }
-.watermark { position:absolute; bottom:24px; right:40px; font-size:15px; color:rgba(255,255,255,.15); }
-</style></head><body>
-<div class="section-tag">策略对比</div>
-<h2>两条不同的<span>长青化路线</span></h2>
-<div class="compare">
-  <div class="col">
-    <div class="col-title">EVD</div>
-    <div class="col-sub">精灵大战矮人</div>
-    <div class="col-strategy">🔽 垂直深挖</div>
-    <div class="col-item">新城市 + 神坛建筑</div>
-    <div class="col-item">誓约军队新兵种</div>
-    <div class="col-item">科技树全新分支</div>
-    <div class="col-item">英雄5星→10星</div>
-    <div class="col-item">终极：Battle Pass订阅制</div>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1242px; height: 1242px;
+    background: #0D0D0D;
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    padding: 64px 72px;
+    gap: 40px;
+    overflow: hidden;
+  }
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .section-title {
+    color: #FFFFFF;
+    font-size: 44px;
+    font-weight: 800;
+  }
+  .section-sub {
+    color: #888;
+    font-size: 24px;
+    margin-top: 6px;
+  }
+  .tag {
+    background: #FF6B35;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 6px;
+  }
+  .table-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .table-header {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr;
+    gap: 0;
+    background: #FF6B35;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  }
+  .th {
+    padding: 18px 24px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+  }
+  .th.dim { text-align: left; color: rgba(255,255,255,0.7); font-weight: 600; font-size: 24px; }
+  .table-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #2A2A2A;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+  }
+  .tr {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr;
+    border-bottom: 1px solid #2A2A2A;
+  }
+  .tr:last-child { border-bottom: none; }
+  .tr:nth-child(even) .td { background: #111; }
+  .td {
+    padding: 18px 24px;
+    font-size: 24px;
+    color: #CCCCCC;
+    line-height: 1.5;
+    border-right: 1px solid #2A2A2A;
+    display: flex; align-items: center;
+  }
+  .td:last-child { border-right: none; }
+  .td.label {
+    color: #888;
+    font-weight: 600;
+    font-size: 22px;
+    background: #161616;
+  }
+  .td.accent { color: #FF6B35; font-weight: 700; }
+  .td.center { text-align: center; justify-content: center; }
+  .common-row {
+    display: flex; flex-direction: column; gap: 16px;
+    background: #1A1A1A;
+    border-radius: 10px;
+    padding: 24px;
+  }
+  .common-title {
+    color: #FF6B35;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .common-items {
+    display: flex; gap: 20px; flex-wrap: wrap;
+  }
+  .common-chip {
+    background: rgba(255,107,53,0.12);
+    border: 1px solid rgba(255,107,53,0.3);
+    color: #CCCCCC;
+    font-size: 22px;
+    padding: 8px 18px;
+    border-radius: 6px;
+  }
+  .bottom-row {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .source { color: #444; font-size: 20px; }
+  .watermark { color: #444; font-size: 20px; font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="section-title">EVD vs KBN · 策略异同对比</div>
+      <div class="section-sub">两款游戏的长青化路径有何不同？</div>
+    </div>
+    <div class="tag">横向比较</div>
   </div>
-  <div class="vs-center">
-    <div class="vs-badge">VS</div>
+
+  <div class="table-wrap">
+    <div class="table-header">
+      <div class="th dim">维度</div>
+      <div class="th">EVD</div>
+      <div class="th">KBN</div>
+    </div>
+    <div class="table-body">
+      <div class="tr">
+        <div class="td label">IP 风险</div>
+        <div class="td accent">主动去 IP 化<br>2017 年重建自有 IP</div>
+        <div class="td" style="color:#888">无 IP 授权风险<br>原创中世纪题材</div>
+      </div>
+      <div class="tr">
+        <div class="td label">变现演化</div>
+        <div class="td">转盘保底(2024)<br>→ Battle Pass(2026)</div>
+        <div class="td">推荐礼包 → 特殊卡牌<br>→ 城市光环(2026)</div>
+      </div>
+      <div class="tr">
+        <div class="td label">社群工具</div>
+        <div class="td">聊天翻译<br>降低跨语言壁垒</div>
+        <div class="td">Discord 官方社群<br>+ 周年纪念活动</div>
+      </div>
+      <div class="tr">
+        <div class="td label">App Store 评分</div>
+        <div class="td center" style="color:#FF4444;font-size:32px;font-weight:900">2.2/5</div>
+        <div class="td center" style="color:#FFA500;font-size:32px;font-weight:900">3.1/5</div>
+      </div>
+      <div class="tr">
+        <div class="td label">当前版本</div>
+        <div class="td center accent" style="font-size:28px;font-weight:800">v17.0.7</div>
+        <div class="td center accent" style="font-size:28px;font-weight:800">v22.9.0</div>
+      </div>
+    </div>
   </div>
-  <div class="col">
-    <div class="col-title">KBN</div>
-    <div class="col-sub">卡米洛特王国</div>
-    <div class="col-strategy">↔️ 横向叠加</div>
-    <div class="col-item">特殊卡牌收藏系统</div>
-    <div class="col-item">City Halo城市光环</div>
-    <div class="col-item">英雄皮肤+装备进化</div>
-    <div class="col-item">宝箱/消费返利活动</div>
-    <div class="col-item">利用14年IP品牌忠诚度</div>
+
+  <div class="common-row">
+    <div class="common-title">两款游戏的共同长青化规律</div>
+    <div class="common-items">
+      <div class="common-chip">不关服、不弃玩家</div>
+      <div class="common-chip">纵向进深而非横向扩展</div>
+      <div class="common-chip">变现机制现代化</div>
+      <div class="common-chip">面向全球西方市场</div>
+      <div class="common-chip">Deca 服务器合并政策</div>
+    </div>
   </div>
-</div>
-<div class="common-box">
-  <div class="common-title">两款游戏共同演变规律</div>
-  <div class="common-grid">
-    <div class="common-item"><div class="common-label">内容节奏</div><div class="common-value">季度→双月→月度</div></div>
-    <div class="common-item"><div class="common-label">外观经济</div><div class="common-value">偶发→系统化皮肤池</div></div>
-    <div class="common-item"><div class="common-label">活动变现</div><div class="common-value">道具销售→订阅制</div></div>
+
+  <div class="bottom-row">
+    <div class="source">数据来源：Apple App Store / Embracer 官方新闻稿</div>
+    <div class="watermark">DECA × 聚锋</div>
   </div>
-</div>
-<div class="watermark">DECA × 聚锋</div>
-</body></html>
+</body>
+</html>

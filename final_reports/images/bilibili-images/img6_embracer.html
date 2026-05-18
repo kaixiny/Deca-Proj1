@@ -1,84 +1,149 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html>
+<head>
+<meta charset="UTF-8">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { width:1920px; height:1080px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:48px 80px; }
-.title-area { text-align:center; margin-bottom:52px; }
-.section-tag { font-size:18px; color:#FF6B35; letter-spacing:4px; margin-bottom:12px; }
-h2 { font-size:50px; font-weight:800; color:#fff; }
-h2 span { color:#FF6B35; }
-.content { display:grid; grid-template-columns:1fr 1fr; gap:48px; width:100%; }
-.left { display:flex; flex-direction:column; gap:24px; }
-.stat-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; }
-.stat-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.2); border-radius:12px; padding:28px 24px; text-align:center; }
-.stat-num { font-size:52px; font-weight:900; color:#FF6B35; line-height:1; margin-bottom:8px; }
-.stat-label { font-size:18px; color:rgba(255,255,255,.5); line-height:1.4; }
-.context-box { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.15); border-radius:12px; padding:28px 30px; }
-.context-title { font-size:20px; color:#FF6B35; font-weight:700; margin-bottom:16px; letter-spacing:2px; }
-.context-item { display:flex; align-items:flex-start; gap:10px; margin-bottom:12px; font-size:18px; color:rgba(255,255,255,.65); line-height:1.5; }
-.context-item::before { content:'▸'; color:#FF6B35; flex-shrink:0; }
-.right { display:flex; flex-direction:column; justify-content:center; }
-.resilience-box { background:linear-gradient(135deg,rgba(255,107,53,.08),rgba(255,107,53,.02)); border:1px solid rgba(255,107,53,.3); border-radius:16px; padding:40px 40px; height:100%; display:flex; flex-direction:column; justify-content:center; }
-.r-title { font-size:26px; font-weight:700; color:#FF6B35; margin-bottom:24px; }
-.r-item { display:flex; align-items:flex-start; gap:12px; margin-bottom:20px; }
-.r-dot { width:8px; height:8px; border-radius:50%; background:#FF6B35; margin-top:7px; flex-shrink:0; }
-.r-text { font-size:20px; color:rgba(255,255,255,.75); line-height:1.6; }
-.r-text em { color:#FF6B35; font-style:normal; font-weight:600; }
-.conclusion { margin-top:28px; padding:20px 24px; background:rgba(255,107,53,.1); border-radius:8px; font-size:20px; color:#fff; line-height:1.6; }
-.watermark { position:absolute; bottom:28px; right:44px; font-size:16px; color:rgba(255,255,255,.15); }
-</style></head><body>
-<div class="title-area">
-  <div class="section-tag">第五部分 · 外部压力与韧性</div>
-  <h2>Embracer 2023 大规模重组 — <span>Deca 的运营韧性</span></h2>
-</div>
-<div class="content">
-  <div class="left">
-    <div class="stat-row">
-      <div class="stat-card">
-        <div class="stat-num">7,800</div>
-        <div class="stat-label">累计裁减人数<br>（15,700 → 7,900）</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">44</div>
-        <div class="stat-label">关闭工作室<br>数量</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">80</div>
-        <div class="stat-label">取消在制<br>项目数</div>
-      </div>
-    </div>
-    <div class="context-box">
-      <div class="context-title">重组背景</div>
-      <div class="context-item">Embracer Group 2023年6月宣布大规模重组计划</div>
-      <div class="context-item">员工规模从 15,700 人缩减至约 7,900 人（约 -50%）</div>
-      <div class="context-item">官方公告未具体提及 Deca Games 或聚风工作室直接受影响</div>
-      <div class="context-item">KBN 玩家社区感知"活跃度逐日下滑"（2024年底记录）</div>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  }
+  .container {
+    width: 100%; height: 100%;
+    display: grid; grid-template-columns: 560px 1fr;
+    position: relative;
+  }
+  .left-panel {
+    background: #111; padding: 80px 64px;
+    display: flex; flex-direction: column; justify-content: center;
+    border-right: 1px solid #222;
+  }
+  .section-tag {
+    font-size: 13px; letter-spacing: 4px; color: #FF6B35;
+    text-transform: uppercase; font-weight: 600; margin-bottom: 24px;
+  }
+  .title {
+    font-size: 44px; font-weight: 800; color: #ffffff; line-height: 1.2;
+    margin-bottom: 32px;
+  }
+  .title span { color: #FF6B35; }
+  .desc {
+    font-size: 17px; color: #888; line-height: 1.8; margin-bottom: 48px;
+  }
+  .date-badge {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: #1a1a1a; padding: 16px 24px; border-left: 4px solid #FF6B35;
+  }
+  .date-text { font-size: 14px; color: #aaa; }
+  .right-panel {
+    padding: 72px 80px; display: flex; flex-direction: column; gap: 36px;
+  }
+  .impact-title {
+    font-size: 20px; color: #ffffff; font-weight: 700; margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .numbers-row {
+    display: flex; gap: 0;
+    border: 1px solid #222;
+  }
+  .num-box {
+    flex: 1; padding: 40px 32px; border-right: 1px solid #222;
+    text-align: center;
+  }
+  .num-box:last-child { border-right: none; }
+  .big-num {
+    font-size: 64px; font-weight: 900; color: #FF6B35; line-height: 1;
+    margin-bottom: 12px;
+  }
+  .num-label {
+    font-size: 15px; color: #666;
+  }
+  .outcome-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    flex: 1;
+  }
+  .outcome-card {
+    background: #141414; border: 1px solid #222; padding: 28px 28px;
+  }
+  .outcome-card.good { border-left: 4px solid #4CAF50; }
+  .outcome-card.risk { border-left: 4px solid #FF6B35; }
+  .card-icon {
+    font-size: 12px; letter-spacing: 2px;
+    font-weight: 700; margin-bottom: 12px;
+  }
+  .card-icon.green { color: #4CAF50; }
+  .card-icon.orange { color: #FF6B35; }
+  .card-title {
+    font-size: 18px; color: #ffffff; font-weight: 600; margin-bottom: 8px;
+  }
+  .card-desc {
+    font-size: 14px; color: #777; line-height: 1.6;
+  }
+  .bottom-bar {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 6px; background: linear-gradient(90deg, #FF6B35 0%, #FF6B35 30%, #222 30%);
+  }
+  .watermark {
+    position: absolute; bottom: 24px; right: 48px;
+    font-size: 14px; color: #333;
+  }
+  .source-note {
+    font-size: 12px; color: #444; margin-top: auto;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="left-panel">
+    <div class="section-tag">External Context · 外部环境</div>
+    <div class="title">Embracer<br><span>大重组</span>浪潮下</div>
+    <div class="desc">2023 年 6 月，因 Savvy Games Group 约 20 亿美元战略投资意外终止，Embracer Group 宣布大规模重组计划，历时 12 个月。</div>
+    <div class="date-badge">
+      <div class="date-text">2023-06 重组启动 → 2024-05 完成</div>
     </div>
   </div>
-  <div class="right">
-    <div class="resilience-box">
-      <div class="r-title">EVD & KBN 展现的运营韧性</div>
-      <div class="r-item">
-        <div class="r-dot"></div>
-        <div class="r-text">整个重组期间（2023–2024），EVD 和 KBN <em>版本更新持续未中断</em></div>
+  <div class="right-panel">
+    <div class="impact-title">重组规模</div>
+    <div class="numbers-row">
+      <div class="num-box">
+        <div class="big-num">44</div>
+        <div class="num-label">工作室关闭</div>
       </div>
-      <div class="r-item">
-        <div class="r-dot"></div>
-        <div class="r-text">EVD 在重组压力最大的 2024 年完成了<em>最大规模系统扩张</em>（Phase 2）</div>
+      <div class="num-box">
+        <div class="big-num">4,532</div>
+        <div class="num-label">裁员人数</div>
       </div>
-      <div class="r-item">
-        <div class="r-dot"></div>
-        <div class="r-text">KBN 同期引入<em>英雄皮肤系统、装备进化系统</em>等新付费层</div>
+      <div class="num-box">
+        <div class="big-num">$2B</div>
+        <div class="num-label">失去的战略投资</div>
       </div>
-      <div class="r-item">
-        <div class="r-dot"></div>
-        <div class="r-text">功能迭代节奏不减，体现手游<em>长尾 Live Ops 模型</em>的相对抗压性</div>
+    </div>
+    <div class="outcome-grid">
+      <div class="outcome-card good">
+        <div class="card-icon green">PROTECTED · 幸存</div>
+        <div class="card-title">Deca/飓风工作室</div>
+        <div class="card-desc">EVD & KBN 作为盈利性 Live Ops 资产，未见具体裁撤报道。2022 财年整体营收 €156.05M，在重组压力下保持商业可行性</div>
       </div>
-      <div class="conclusion">
-        结论：手游 Live Ops 业务的低资本投入 + 稳定现金流特性，使其在集团级重组中具备相对抗压性。
+      <div class="outcome-card risk">
+        <div class="card-icon orange">IMPACT · 潜在影响</div>
+        <div class="card-title">资源投入收缩</div>
+        <div class="card-desc">重组带来的资源收缩可能限制了新功能研发节奏，但两款游戏更新频率并未明显下降</div>
+      </div>
+      <div class="outcome-card good">
+        <div class="card-icon green">VERIFIED · 验证</div>
+        <div class="card-title">持续盈利验证</div>
+        <div class="card-desc">Deca 模式（低成本收购 + 专业运营）被证明在集团重组压力下具备强韧性，成为 Embracer 保留的盈利资产之一</div>
+      </div>
+      <div class="outcome-card risk">
+        <div class="card-icon orange">UNCERTAINTY · 不确定性</div>
+        <div class="card-title">未来战略走向</div>
+        <div class="card-desc">Embracer 重组后整体策略调整，Deca 能否维持独立运营节奏仍需持续观察</div>
       </div>
     </div>
   </div>
+  <div class="bottom-bar"></div>
+  <div class="watermark">DECA × 聚锋</div>
 </div>
-<div class="watermark">DECA × 聚锋</div>
-</body></html>
+</body>
+</html>

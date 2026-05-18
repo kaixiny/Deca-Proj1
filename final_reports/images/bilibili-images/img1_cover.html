@@ -1,35 +1,116 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html>
+<head>
+<meta charset="UTF-8">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { width:1920px; height:1080px; background:#0a0a0a; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; align-items:center; justify-content:center; }
-.bg-grid { position:absolute; inset:0; background-image: linear-gradient(rgba(255,107,53,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,107,53,.06) 1px,transparent 1px); background-size:60px 60px; }
-.glow { position:absolute; width:800px; height:800px; background:radial-gradient(circle,rgba(255,107,53,.12) 0%,transparent 70%); top:50%; left:50%; transform:translate(-50%,-50%); }
-.card { position:relative; z-index:10; text-align:center; max-width:1400px; padding:0 60px; }
-.tag { display:inline-block; background:rgba(255,107,53,.15); border:1px solid rgba(255,107,53,.4); color:#FF6B35; font-size:22px; padding:8px 28px; border-radius:4px; letter-spacing:4px; margin-bottom:48px; }
-h1 { font-size:72px; font-weight:800; color:#fff; line-height:1.2; margin-bottom:32px; letter-spacing:2px; }
-h1 span { color:#FF6B35; }
-.sub { font-size:32px; color:rgba(255,255,255,.55); letter-spacing:2px; margin-bottom:64px; }
-.pills { display:flex; gap:24px; justify-content:center; flex-wrap:wrap; margin-bottom:64px; }
-.pill { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); color:rgba(255,255,255,.7); padding:10px 28px; border-radius:30px; font-size:22px; }
-.divider { width:120px; height:3px; background:linear-gradient(90deg,transparent,#FF6B35,transparent); margin:0 auto 48px; }
-.meta { font-size:20px; color:rgba(255,255,255,.3); letter-spacing:2px; }
-.watermark { position:absolute; bottom:32px; right:48px; font-size:18px; color:rgba(255,255,255,.2); }
-</style></head><body>
-<div class="bg-grid"></div>
-<div class="glow"></div>
-<div class="card">
-  <div class="tag">DECA × 聚锋 研究报告</div>
-  <h1>Deca 中国工作室<br><span>EVD & KBN</span> 长青化运营<br>策略演变报告</h1>
-  <div class="sub">零先验信息条件下的深度研究 | 修订版 | 2026-05-17</div>
-  <div class="pills">
-    <div class="pill">Elves vs Dwarves</div>
-    <div class="pill">Kingdoms of Camelot: BN</div>
-    <div class="pill">聚风工作室 · Deca Games</div>
-    <div class="pill">Embracer Group</div>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .container {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    position: relative;
+  }
+  .bg-grid {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(255,107,53,0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,107,53,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .tag {
+    font-size: 18px; letter-spacing: 6px; text-transform: uppercase;
+    color: #FF6B35; font-weight: 600; margin-bottom: 32px;
+  }
+  .title-evd {
+    font-size: 110px; font-weight: 900; color: #FF6B35;
+    letter-spacing: 4px; line-height: 1;
+  }
+  .title-sep {
+    font-size: 72px; font-weight: 300; color: #555; margin: 0 24px;
+  }
+  .title-kbn {
+    font-size: 110px; font-weight: 900; color: #ffffff;
+    letter-spacing: 4px; line-height: 1;
+  }
+  .title-row {
+    display: flex; align-items: center; margin-bottom: 32px;
+  }
+  .subtitle {
+    font-size: 36px; font-weight: 300; color: #cccccc;
+    letter-spacing: 8px; margin-bottom: 48px;
+  }
+  .divider {
+    width: 120px; height: 3px; background: #FF6B35; margin-bottom: 48px;
+  }
+  .meta-row {
+    display: flex; gap: 64px; align-items: center;
+  }
+  .meta-item {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+  }
+  .meta-label {
+    font-size: 14px; color: #666; letter-spacing: 3px; text-transform: uppercase;
+  }
+  .meta-value {
+    font-size: 20px; color: #fff; font-weight: 600;
+  }
+  .meta-sep {
+    width: 1px; height: 48px; background: #333;
+  }
+  .watermark {
+    position: absolute; bottom: 32px; right: 48px;
+    font-size: 16px; color: #444; letter-spacing: 2px;
+  }
+  .corner-accent {
+    position: absolute; top: 0; left: 0;
+    width: 8px; height: 200px; background: #FF6B35;
+  }
+  .corner-accent-h {
+    position: absolute; top: 0; left: 0;
+    width: 200px; height: 8px; background: #FF6B35;
+  }
+  .corner-accent-br {
+    position: absolute; bottom: 0; right: 0;
+    width: 8px; height: 200px; background: #333;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="bg-grid"></div>
+  <div class="corner-accent"></div>
+  <div class="corner-accent-h"></div>
+  <div class="corner-accent-br"></div>
+  <div class="tag">Research Report · 长青化运营策略</div>
+  <div class="title-row">
+    <span class="title-evd">EVD</span>
+    <span class="title-sep">&</span>
+    <span class="title-kbn">KBN</span>
   </div>
+  <div class="subtitle">长青化运营策略演变报告</div>
   <div class="divider"></div>
-  <div class="meta">实体识别 · 策略演变 · 横向对比 · 韧性分析</div>
+  <div class="meta-row">
+    <div class="meta-item">
+      <div class="meta-label">研究主体</div>
+      <div class="meta-value">飓风工作室 × Deca Games</div>
+    </div>
+    <div class="meta-sep"></div>
+    <div class="meta-item">
+      <div class="meta-label">研究周期</div>
+      <div class="meta-value">2009 — 2026</div>
+    </div>
+    <div class="meta-sep"></div>
+    <div class="meta-item">
+      <div class="meta-label">数据来源</div>
+      <div class="meta-value">App Store · Embracer 官方 · Wikipedia</div>
+    </div>
+  </div>
+  <div class="watermark">DECA × 聚锋</div>
 </div>
-<div class="watermark">DECA × 聚锋</div>
-</body></html>
+</body>
+</html>

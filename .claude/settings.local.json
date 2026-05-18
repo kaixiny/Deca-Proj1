@@ -62,7 +62,25 @@
       "Skill(xiaohongshu-publish)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/)",
       "Bash(python -m http.server 8766)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8766/xhs_cover.html)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8766/xhs_cover.html)",
+      "WebFetch(domain:www.trustpilot.com)",
+      "WebFetch(domain:evd.gaeamobile.com)",
+      "WebFetch(domain:toucharcade.com)",
+      "WebFetch(domain:hobbit.weezeewig.com)",
+      "WebFetch(domain:lotr.fandom.com)",
+      "WebFetch(domain:news.cision.com)",
+      "WebFetch(domain:tolkiengateway.net)",
+      "Bash(Start-Process python *)",
+      "Bash(Start-Sleep -Seconds 2)",
+      "PowerShell(Start-Process python -ArgumentList \"-m http.server 7788\" -WorkingDirectory \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\final_reports\\\\images\\\\bilibili-images\" -WindowStyle Hidden)",
+      "PowerShell(Start-Process powershell -ArgumentList \"-NoProfile -Command `\"cd 'C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\final_reports\\\\images\\\\bilibili-images'; python -m http.server 8765`\"\" -WindowStyle Hidden; Start-Sleep -Seconds 2; echo \"Server started\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\final_reports\\\\images\\\\bilibili-images\\\\\" | ForEach-Object { \"$\\($_.Name\\) - $\\([math]::Round\\($_.Length/1KB, 0\\)\\) KB\" })",
+      "mcp__playwright__browser_network_request",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\final_reports\\\\images\\\\xiaohongshu-images\" -ErrorAction SilentlyContinue | Select-Object Name; if \\(-not \\(Test-Path \"C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\final_reports\\\\images\\\\xiaohongshu-images\"\\)\\) { \"目录不存在\" } else { \"目录存在\" })",
+      "PowerShell(Start-Process powershell -ArgumentList \"-NoProfile -Command `\"cd 'C:\\\\Users\\\\Kaixin\\\\Desktop\\\\Deca-Proj1\\\\final_reports\\\\images\\\\xiaohongshu-images'; python -m http.server 8766`\"\" -WindowStyle Hidden; Start-Sleep -Seconds 2; echo \"Server started on 8766\")",
+      "Bash(Invoke-WebRequest -Uri \"http://localhost:7788/xhs_cover.html\" -UseBasicParsing)",
+      "Bash(Select-Object -ExpandProperty StatusCode)",
+      "PowerShell(Start-Sleep -Seconds 1; \\(Invoke-WebRequest -Uri \"http://localhost:7788/xhs_cover.html\" -UseBasicParsing\\).StatusCode)"
     ]
   }
 }

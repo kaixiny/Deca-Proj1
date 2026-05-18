@@ -1,84 +1,183 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html>
+<head>
+<meta charset="UTF-8">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { width:1920px; height:1080px; background:#0f0f0f; font-family:'Microsoft YaHei','PingFang SC',Inter,sans-serif; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:48px 80px; }
-.title-area { text-align:center; margin-bottom:52px; }
-.section-tag { font-size:18px; color:#FF6B35; letter-spacing:4px; margin-bottom:12px; }
-h2 { font-size:50px; font-weight:800; color:#fff; }
-h2 span { color:#FF6B35; }
-.timeline { display:flex; width:100%; gap:0; position:relative; }
-.timeline::before { content:''; position:absolute; top:68px; left:40px; right:40px; height:3px; background:linear-gradient(90deg,rgba(255,107,53,.3),#FF6B35,rgba(255,107,53,.3)); }
-.phase { flex:1; display:flex; flex-direction:column; align-items:center; padding:0 16px; position:relative; z-index:1; }
-.dot { width:20px; height:20px; border-radius:50%; background:#FF6B35; box-shadow:0 0 16px rgba(255,107,53,.6); margin-bottom:24px; flex-shrink:0; }
-.phase-box { background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.2); border-radius:12px; padding:28px 24px; width:100%; }
-.phase-num { font-size:13px; color:#FF6B35; letter-spacing:3px; margin-bottom:8px; }
-.phase-name { font-size:22px; font-weight:700; color:#fff; margin-bottom:8px; line-height:1.3; }
-.phase-time { font-size:17px; color:#FF6B35; margin-bottom:10px; font-weight:600; }
-.phase-op { font-size:15px; color:rgba(255,255,255,.35); margin-bottom:12px; }
-.phase-key { font-size:16px; color:rgba(255,255,255,.6); line-height:1.7; }
-.milestone { margin-top:8px; display:flex; align-items:flex-start; gap:6px; }
-.milestone::before { content:'▸'; color:#FF6B35; font-size:14px; flex-shrink:0; margin-top:1px; }
-.highlight { color:#FF6B35; font-weight:600; }
-.watermark { position:absolute; bottom:28px; right:44px; font-size:16px; color:rgba(255,255,255,.15); }
-</style></head><body>
-<div class="title-area">
-  <div class="section-tag">第三部分 · EVD 策略演变</div>
-  <h2><span>Elves vs Dwarves</span> — 四阶段长青化演变时间线</h2>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  }
+  .container {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 72px 120px; position: relative;
+  }
+  .top-bar {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 56px;
+  }
+  .section-tag {
+    font-size: 13px; letter-spacing: 4px; color: #FF6B35;
+    text-transform: uppercase; font-weight: 600; margin-bottom: 12px;
+  }
+  .title {
+    font-size: 48px; font-weight: 800; color: #ffffff; line-height: 1.2;
+  }
+  .title span { color: #FF6B35; }
+  .game-badge {
+    background: #1a1a1a; border: 1px solid #333; padding: 20px 36px;
+    text-align: right;
+  }
+  .game-name { font-size: 24px; color: #FF6B35; font-weight: 700; }
+  .game-sub { font-size: 14px; color: #666; margin-top: 6px; }
+  .timeline {
+    display: flex; gap: 24px; flex: 1; align-items: stretch;
+  }
+  .tl-item {
+    flex: 1; display: flex; flex-direction: column;
+  }
+  .tl-date {
+    font-size: 13px; color: #FF6B35; font-weight: 600;
+    letter-spacing: 1px; margin-bottom: 12px;
+  }
+  .tl-bar {
+    height: 4px; background: #222; margin-bottom: 20px; position: relative;
+  }
+  .tl-bar::before {
+    content: '';
+    position: absolute; left: 0; top: -4px;
+    width: 12px; height: 12px;
+    background: #FF6B35; border-radius: 50%;
+  }
+  .tl-bar.key::before { width: 16px; height: 16px; top: -6px; }
+  .tl-card {
+    flex: 1; background: #141414; border: 1px solid #2a2a2a;
+    padding: 24px 20px;
+  }
+  .tl-card.highlight {
+    background: #1e1000; border-color: #FF6B35;
+  }
+  .tl-version {
+    font-size: 14px; color: #555; margin-bottom: 8px; font-family: monospace;
+  }
+  .tl-event {
+    font-size: 16px; color: #cccccc; line-height: 1.5; font-weight: 500;
+  }
+  .tl-card.highlight .tl-event {
+    color: #ffffff;
+  }
+  .tl-tag {
+    display: inline-block; margin-top: 12px;
+    font-size: 11px; padding: 4px 10px;
+    background: #FF6B35; color: #000; font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .bottom-row {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 40px; padding-top: 24px; border-top: 1px solid #222;
+  }
+  .insight {
+    font-size: 16px; color: #888;
+    max-width: 800px;
+  }
+  .insight span { color: #FF6B35; }
+  .rating-box {
+    text-align: right;
+  }
+  .rating-num {
+    font-size: 40px; font-weight: 900; color: #FF6B35;
+  }
+  .rating-label {
+    font-size: 13px; color: #555;
+  }
+  .watermark {
+    position: absolute; bottom: 24px; right: 48px;
+    font-size: 14px; color: #333;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="top-bar">
+    <div>
+      <div class="section-tag">EVD · Elves vs Dwarves · 版本演进</div>
+      <div class="title">内容深化：<span>从保底转盘到战令系统</span></div>
+    </div>
+    <div class="game-badge">
+      <div class="game-name">Elves vs Dwarves</div>
+      <div class="game-sub">精灵大战矮人 · Deca 接管后（2021–2026）</div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-date">2024-09</div>
+      <div class="tl-bar"></div>
+      <div class="tl-card">
+        <div class="tl-version">v16.8.9</div>
+        <div class="tl-event">新城堡皮肤上线；修复活动 & 登录 bug</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">2024-11</div>
+      <div class="tl-bar key"></div>
+      <div class="tl-card highlight">
+        <div class="tl-version">v16.9.0</div>
+        <div class="tl-event">转盘保底与连抽机制上线</div>
+        <div class="tl-tag">变现机制升级</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">2024-12</div>
+      <div class="tl-bar"></div>
+      <div class="tl-card">
+        <div class="tl-version">v16.9.1</div>
+        <div class="tl-event">英雄解锁上限扩展至 6–10 星</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">2025-05</div>
+      <div class="tl-bar"></div>
+      <div class="tl-card">
+        <div class="tl-version">v16.9.3</div>
+        <div class="tl-event">聊天翻译功能；英雄 6 级装备</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">2025-12</div>
+      <div class="tl-bar"></div>
+      <div class="tl-card">
+        <div class="tl-version">v17.0.2</div>
+        <div class="tl-event">坐骑升星扩展至 9 星；专属坐骑皮肤</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">2026-03</div>
+      <div class="tl-bar key"></div>
+      <div class="tl-card highlight">
+        <div class="tl-version">v17.0.6</div>
+        <div class="tl-event">Battle Pass 战令系统上线</div>
+        <div class="tl-tag">重大变现模式升级</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">2026-04</div>
+      <div class="tl-bar"></div>
+      <div class="tl-card">
+        <div class="tl-version">v17.0.7</div>
+        <div class="tl-event">新部队与英雄内容更新</div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-row">
+    <div class="insight">核心策略：<span>纵向进深</span>（扩展英雄/坐骑上限）+ <span>变现现代化</span>（保底转盘 → 战令）+ <span>社群互联</span>（聊天翻译）</div>
+    <div class="rating-box">
+      <div class="rating-num">2.2<span style="font-size:20px;color:#555">/5</span></div>
+      <div class="rating-label">App Store 评分（465 评）</div>
+    </div>
+  </div>
+  <div class="watermark">DECA × 聚锋</div>
 </div>
-<div class="timeline">
-  <div class="phase">
-    <div class="dot"></div>
-    <div class="phase-box">
-      <div class="phase-num">PHASE 0</div>
-      <div class="phase-name">IP 重建期</div>
-      <div class="phase-time">2016–2021</div>
-      <div class="phase-op">运营方：Gaea / 聚风</div>
-      <div class="milestone"><span>脱 Hobbit IP 授权，更名 EVD</span></div>
-      <div class="milestone"><span>保留玩家账号/道具/进度</span></div>
-      <div class="milestone"><span>App ID 沿用 com.kabam.evd</span></div>
-      <div class="milestone"><span>确立"内核不变，皮肤可替换"基调</span></div>
-    </div>
-  </div>
-  <div class="phase">
-    <div class="dot"></div>
-    <div class="phase-box">
-      <div class="phase-num">PHASE 1</div>
-      <div class="phase-name">接管稳定期</div>
-      <div class="phase-time">Oct 2021–2023</div>
-      <div class="phase-op">运营方：Deca / 聚风</div>
-      <div class="milestone"><span>账号数据零损失无缝交接</span></div>
-      <div class="milestone"><span>版本维持 v16.x，更新节奏稳定</span></div>
-      <div class="milestone"><span>季节性城堡/行军皮肤持续扩池</span></div>
-      <div class="milestone"><span>英雄技能体系优化</span></div>
-    </div>
-  </div>
-  <div class="phase">
-    <div class="dot"></div>
-    <div class="phase-box">
-      <div class="phase-num">PHASE 2</div>
-      <div class="phase-name">结构扩张期</div>
-      <div class="phase-time">2024</div>
-      <div class="phase-op">运营方：Deca / 聚风</div>
-      <div class="milestone"><span><span class="highlight">新增第六城</span> + 神坛建筑</span></div>
-      <div class="milestone"><span>誓约军队（新兵种系统）</span></div>
-      <div class="milestone"><span>科技树扩展新分支节点</span></div>
-      <div class="milestone"><span><span class="highlight">英雄星级 5星→10星</span>（v16.9.0）</span></div>
-    </div>
-  </div>
-  <div class="phase">
-    <div class="dot"></div>
-    <div class="phase-box">
-      <div class="phase-num">PHASE 3</div>
-      <div class="phase-name">深度变现期</div>
-      <div class="phase-time">2025–2026</div>
-      <div class="phase-op">运营方：Deca / 聚风</div>
-      <div class="milestone"><span>6级英雄装备（付费纵深梯队）</span></div>
-      <div class="milestone"><span>聊天翻译（国际化）</span></div>
-      <div class="milestone"><span>坐骑晋升至9星</span></div>
-      <div class="milestone"><span><span class="highlight">Battle Pass 正式上线</span>（v17.0.4）</span></div>
-    </div>
-  </div>
-</div>
-<div class="watermark">DECA × 聚锋</div>
-</body></html>
+</body>
+</html>

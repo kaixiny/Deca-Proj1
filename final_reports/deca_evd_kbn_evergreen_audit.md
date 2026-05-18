@@ -1,84 +1,67 @@
-# 红队审查报告：deca_evd_kbn_evergreen_draft
+# EVD & KBN 长青化运营策略演变报告 — 红队审查
 
-**审查时间**: 2026-05-17  
-**审查对象**: `deca_evd_kbn_evergreen_draft.md`  
-**审查方法**: 对初稿中每条 HIGH/MEDIUM 声明独立 fetch 原始页面验证
-
----
-
-## 审查结果汇总
-
-| 序号 | 声明摘要 | 状态 | 原始页面验证 | 置信度判定 |
-|------|----------|------|-------------|-----------|
-| A1 | 聚风2015年成立、北京CBD、50人、An An任MD、99%+ 收入来自亚太区外 | ✅ 通过 | [Embracer 官方公告](https://embracer.com/releases/embracer-group-acquires-mobile-game-developer-jufeng-studio-and-eight-mobile-titles/) | HIGH → HIGH |
-| A2 | Q3 2021 DAU 15万、MAU 80万、营收约 SEK 5000万 | ✅ 通过 | 同上 | HIGH → HIGH |
-| A3 | KBN 2012年3月1日上线，当年App Store最高营收iPhone游戏 | ✅ 通过 | [Wikipedia](https://en.wikipedia.org/wiki/Kingdoms_of_Camelot) | HIGH → HIGH |
-| A4 | KBN 2016年1月7日 Kabam 售予 Gaea Mobile | ✅ 通过 | 同上 | HIGH → HIGH |
-| A5 | KBN 9.5M玩家、68+国App Store #1 | ✅ 通过（来源修正） | [App Store 官方页面](https://apps.apple.com/us/app/kingdoms-of-camelot-battle/id476546099) | MEDIUM → MEDIUM（来源为开发商自述） |
-| A6 | Kabam 2013年营收$3.6亿 | ⚠️ 来源降级 | 维基百科记载为整个 Kabam 公司营收，KBN 为主要贡献游戏之一，表述本身无误但原来源(Wikipedia)非一手来源 | MEDIUM → LOW |
-| A7 | Embracer 2023年重组裁员"逾4500人" | ❌ 数字错误 | [Udonis 分析](https://www.blog.udonis.co/mobile-marketing/mobile-games/embracer-group-layoffs) | 实际累计裁减约 **7,800人**，关闭44工作室，取消80项目 |
-| A8 | EVD 前身为霍比特人:中洲王国，更名后保留玩家进度 | ⚠️ 来源为玩家博客 | [komhelp.wordpress.com](https://komhelp.wordpress.com/elves-vs-dwarves/) 为非官方 | MEDIUM → LOW |
-| A9 | EVD 版本历史（v16.7.4 至 v17.0.7）各项功能描述 | ✅ 通过 | [soft112](https://elves-vs-dwarves-ios.soft112.com/) + [App Store](https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435) | MEDIUM → MEDIUM |
-| A10 | KBN 版本历史各版本时间线 | ✅ 通过（部分补充） | [soft112](https://kingdoms-of-camelot-battle.soft112.com/) + [App Store](https://apps.apple.com/us/app/kingdoms-of-camelot-battle/id476546099) | MEDIUM → MEDIUM |
-| A11 | KBN Google Play 评分 3.6/5（56,800评论）| ✅ 通过 | App Store 显示3.1/5（413条），Google Play 显示3.6/5；两平台数据不同，草稿引用的是Google Play数据，需注明平台 | MEDIUM → MEDIUM（需标注平台） |
+**审查对象**：`deca_evd_kbn_evergreen_draft.md`
+**审查时间**：2026-05-17
+**审查方法**：对 draft 中所有 HIGH/MEDIUM 置信度声明逐一 fetch 原始页面核实
 
 ---
 
-## 重要发现：草稿遗漏的内容更新
+## 审查结论汇总
 
-**补充发现**：App Store 版本历史记录的 KBN v22.4.0（2024 年 11 月 6 日）新增了以下重要内容，草稿未覆盖：
-- 动态城堡皮肤（Dynamic Castle Skins）
-- **英雄皮肤系统（Hero Skin System）** ← 重要新系统
-- 行军皮肤（March Skins）
-- 传奇骑士（Legendary Knights）
-- **装备进化系统（Gear Evolution System）** ← 重要新系统
-
-来源：[App Store 版本历史](https://apps.apple.com/us/app/kingdoms-of-camelot-battle/id476546099)  
-建议在 final 中补充到 Phase 4 部分。
-
----
-
-## 详细审查记录
-
-### 审查 #A7：Embracer 裁员数字错误
-
-- **初稿声明**："累计裁员逾 4500 人、关闭 44 个工作室"
-- **问题**：4,500 人是某一统计截点（2023年6月至2024年5月）的数字，并非最终总数
-- **实际数据**（来源：[Udonis/Embracer Group Layoffs](https://www.blog.udonis.co/mobile-marketing/mobile-games/embracer-group-layoffs)）：
-  - 裁员总计约 **7,800 人**（Embracer 员工从 15,700 缩减至约 7,900，减少超 50%）
-  - 关闭工作室：**44 个**（此数字正确）
-  - 取消项目：**80 个**（初稿未提及）
-- **修订方向**：将裁员数字从 "4500" 更正为 "约 7,800"，补充取消项目数
-
-### 审查 #A6：Kabam 2013 营收来源
-
-- **初稿声明**："Kabam 整体游戏组合 2013 年营收达 3.6 亿美元"
-- **问题**：维基百科引用的二手数据，原始来源为当时媒体报道，并非 Kabam 官方财报
-- **结论**：数字本身可信但置信度应从 MEDIUM 降至 LOW
-
-### 审查 #A8：EVD Hobbit IP 来源
-
-- **初稿声明**：EVD 前身为 The Hobbit: Kingdoms of Middle-earth，更名后玩家进度保留
-- **问题**：来源为玩家非官方博客 komhelp.wordpress.com
-- **部分佐证**：App ID 仍为 com.kabam.evd，包名中的 "evd" 与 Elves vs Dwarves 匹配；原始游戏也由 Kabam 开发，IP 关系逻辑合理
-- **结论**：内容合理但置信度应保持 LOW，需在 final 中注明"未找到官方声明"
+| 编号 | 声明 | 验证结果 | 来源 |
+|------|------|----------|------|
+| A1 | KBN iOS 公测日期 2011-11-21，正式上线 2012-03-01 | ✅ 通过 | [Wikipedia: Kingdoms of Camelot](https://en.wikipedia.org/wiki/Kingdoms_of_Camelot) |
+| A2 | KBN 2012 年成为 iOS 年度最高销售榜首 | ✅ 通过 | [Wikipedia: Kingdoms of Camelot](https://en.wikipedia.org/wiki/Kingdoms_of_Camelot) |
+| A3 | Kabam 于 2016-01-07 将 KBN 等游戏售予盖娅互娱 | ✅ 通过 | [Wikipedia: Kingdoms of Camelot](https://en.wikipedia.org/wiki/Kingdoms_of_Camelot) |
+| A4 | Embracer 于 2020-08-13 以 €25M + 最高 €60M 对赌收购 Deca | ✅ 通过 | [Embracer 官方新闻稿](https://embracer.com/releases/embracer-group-acquires-deca-games/) |
+| A5 | Deca 预测利润率 >35%，净销售 >€20M（Apr 2020-Mar 2021）| ✅ 通过 | [Embracer 官方新闻稿](https://embracer.com/releases/embracer-group-acquires-deca-games/) |
+| A6 | Deca 2022 财年收入 €156.05M，814 名员工 | ✅ 通过 | [Wikipedia: Deca Games](https://en.wikipedia.org/wiki/Deca_Games) |
+| A7 | Jufeng Studio 2021 年 10 月被 Deca 收购 | ✅ 通过 | [Wikipedia: Deca Games](https://en.wikipedia.org/wiki/Deca_Games) |
+| A8 | 飓风工作室：50 人团队，北京 CBD | ✅ 通过 | [Embracer Jufeng 新闻稿](https://embracer.com/releases/embracer-group-acquires-mobile-game-developer-jufeng-studio-and-eight-mobile-titles/) |
+| A9 | 八款游戏：~150,000 DAU / ~800,000 MAU / ~SEK 5,000 万季度毛收入（2021-Q3）| ✅ 通过 | [Embracer Jufeng 新闻稿](https://embracer.com/releases/embracer-group-acquires-mobile-game-developer-jufeng-studio-and-eight-mobile-titles/) |
+| A10 | 99%+ 收入来自亚太以外 | ✅ 通过 | [Embracer Jufeng 新闻稿](https://embracer.com/releases/embracer-group-acquires-mobile-game-developer-jufeng-studio-and-eight-mobile-titles/) |
+| A11 | EVD App Store 评分 2.2/5（465 评） | ✅ 通过 | [Apple App Store - EVD](https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435) |
+| A12 | KBN App Store 评分 3.1/5（413 评） | ✅ 通过 | [Apple App Store - KBN](https://apps.apple.com/us/app/kingdoms-of-camelot-battle/id476546099) |
+| A13 | EVD v17.0.4（2026-03-17）上线 Battle Pass | ✅ 通过 | [Apple App Store - EVD](https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435) |
+| A14 | EVD v16.9.0（2024-11-19）转盘优化加入保底与连抽 | ✅ 通过 | [Apple App Store - EVD](https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435) |
+| A15 | EVD v16.9.1（2024-12-13）英雄解锁至 6-10 星 | ✅ 通过 | [Apple App Store - EVD](https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435) |
+| A16 | **⚠️ EVD v16.9.3 日期标注错误**：draft 写 "2025-02"，实际为 2025-05-08 | ❌ 错误 | [Apple App Store - EVD](https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435) |
+| A17 | EVD v16.9.3 功能：聊天翻译 + 英雄 6 级装备 | ✅ 通过 | [Apple App Store - EVD](https://apps.apple.com/us/app/elves-vs-dwarves/id1231491435) |
+| A18 | KBN v22.4.0（2024-11-06）传奇骑士系统上线 | ✅ 通过 | [Apple App Store - KBN](https://apps.apple.com/us/app/kingdoms-of-camelot-battle/id476546099) |
+| A19 | KBN v22.8.0（2026-01-22）城市光环系统 + 周年皮肤 | ✅ 通过 | [Apple App Store - KBN](https://apps.apple.com/us/app/kingdoms-of-camelot-battle/id476546099) |
+| A20 | Embracer 重组 2023 年 6 月宣布；4,532 人离职；44 工作室关闭 | ✅ 通过 | [Wikipedia: Embracer Group](https://en.wikipedia.org/wiki/Embracer_Group) |
+| A21 | Savvy Games Group 约 20 亿美元投资意外终止 | ✅ 通过 | [Wikipedia: Embracer Group](https://en.wikipedia.org/wiki/Embracer_Group) |
+| A22 | Hobbit 游戏 2017-06-30 关闭，原因为 IP 授权到期 | MEDIUM（多搜索结果一致，但主页面 403/SSL 错误，未能直接 fetch 原始页面）| Search results + community sources |
 
 ---
 
-## 已知局限（Audit 失效场景）
+## 发现的问题
 
-1. **soft112 日期准确性**：该站点为第三方聚合，部分版本日期可能与实际上线日期有1-3天误差
-2. **KBN 早期版本功能**（2021–2023）：多数更新说明仅记录版本号和时间，无详细功能描述，无法一一验证
-3. **聚风工作室 2023 年后的内部影响**：Embracer 重组期间聚风是否受直接影响，未找到任何一手声明
+### 错误 #1（对应 A16）— 严重：日期错误
+**位置**：四、EVD 长青化策略演变 → 阶段二更新表格，第 4 行
+**错误内容**：`| 2025-02 | v16.9.3 | 添加聊天翻译功能；英雄 6 级装备…`
+**实际情况**：v16.9.3 发布日期为 **2025-05-08**（Apple App Store 两次独立 fetch 均显示 "05/08/2025"）。"2025-02" 是相邻版本 v16.9.2（纯 bug 修复）的月份被错误附加给了 v16.9.3。
+**修订操作**：将 "2025-02" 改为 "2025-05"
+
+### 降级标注 #1（对应 A22）— 轻微：霍比特人关闭日期置信度调整
+**位置**：二、所有权链 2.2 EVD 节点 "2017-06-30 霍比特人 IP 授权到期"
+**问题**：多个搜索结果一致支持"2017年6月30日"这一日期，但所有直接 fetch 主页面均返回 403 或 SSL 错误，无法独立 fetch 一手来源页面。
+**修订操作**：将该声明的置信度从暗示的 HIGH 降至 **MEDIUM**，并更新置信度统计表。
 
 ---
 
-## 修订清单
+## 审查通过声明
 
-| 编号 | 位置 | 修订类型 |
-|------|------|----------|
-| R1 | 第五部分 5.3 Embracer 重组段 | 裁员数字从 "4500" 改为 "约 7,800" |
-| R2 | 第四部分 Phase 4 | 补充 KBN v22.4.0 英雄皮肤 + 装备进化系统 |
-| R3 | 第四部分 4.2 Kabam 营收 | 置信度从 MEDIUM 降至 LOW |
-| R4 | 第三部分 3.2 EVD IP 来源 | 置信度从 MEDIUM 降至 LOW，标注"来源为非官方" |
-| R5 | 第四部分 4.2 KBN 峰值数据来源 | 来源改为 App Store 官方页面（而非 PocketGamer）|
+共抽查 22 条，其中：
+- ✅ 通过验证：20 条
+- ❌ 错误（需修订）：1 条
+- ⚠️ 降级（由 HIGH → MEDIUM）：1 条
+
+---
+
+## 红队审查局限性（已知）
+
+1. **同工具同偏差**：初稿与审查均使用 WebFetch，系统性 AI 摘要偏差无法通过内部审查消除。
+2. **App Store 版本描述不稳定**：两次 fetch 同一 App Store 页面，部分中间版本（v16.9.8、v17.0.2）描述有差异，疑为 WebFetch AI 模型对截断内容的不同解读。核心声明（Battle Pass、wheel guarantees、hero stars）两次一致，可信度高；边缘版本描述存在轻微不确定性。
+3. **Deca 支持页面 403**：support.decagames.com 全系拦截，无法直接验证更新日志原文。
+4. **EVD 去 IP 化事件**：Hobbit→EVD 转型是报告的关键叙事节点，但 Tolkien Gateway / LOTR Fandom 等主要来源均返回 403，该声明依赖搜索摘要，存在 1-2 条细节可能不准确的风险。
